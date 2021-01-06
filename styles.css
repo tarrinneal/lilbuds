@@ -15,3 +15,10 @@ html, body, #app {
 .battle-screen {
   border: 1px solid black;
 }
+
+/*
+---------------Buttons----------------
+*/
+.button:hover {
+  cursor: pointer;
+}
