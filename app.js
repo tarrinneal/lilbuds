@@ -10,15 +10,17 @@ $(document).ready(function() {
   //create new HTML elements
   var $header = $('<div class="header"></div>');
   var $title = $('<h1>Little Buds!</h1>');
-  var $battleScreen = $('<div class="battle-screen"></div>');
+  var $battleScreen = $('<section class="battle-screen"></section>');
 
   //event handler functions
   var generateMoveButtons = function(bud) {
     var moveList = bud.moves;
+    var $moveListBox = $('<div class="move-list-box"></div>');
     for (var i = 0; i < moveList.length; i++) {
       $moveButton = $('<button class="move-' + (i+1) +'">' + moveList[i] + '</button>')
-      $moveButton.appendTo($battleScreen);
+      $moveButton.appendTo($moveListBox);
     }
+    $moveListBox.appendTo($battleScreen);
   }
 
   //set event listeners (providing appropriate handlers as input)
