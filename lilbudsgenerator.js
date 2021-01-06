@@ -2,6 +2,7 @@
 let buds = [
   {
   name: 'Gandalf',
+
   type: 'rock',
   maxHp: 20,
   currentHp: 20,
