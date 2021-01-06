@@ -43,17 +43,17 @@ $(document).ready(function() {
       var $budWindow = $('<div class="bud-window"></div>');
 
       var $budPic = $('<img class="bud-pic">');
-      $budPic.attr("src", bud.pic);
+      $budPic.attr("src", budStorage[bud].pic);
       // $budPic.on('click' , /*run something here*/);
 
       var $budName = $('<div class="bud-name"></div>');
-      $budName.text("Name: " + bud.name);
+      $budName.text("Name: " + budStorage[bud].name);
 
       var $budHealth = $('<div class="bud-health"></div>');
-      $budHealth.text("HP: " + bud.currentHp + "/" + bud.maxHp);
+      $budHealth.text("HP: " + budStorage[bud].currentHp + "/" + budStorage[bud].maxHp);
 
       var $budType = $('<div class="bud-type"></div>');
-      $budType.text("Type: " + bud.type);
+      $budType.text("Type: " + budStorage[bud].type);
 
       $budWindow.appendTo($chooseWindow);
       $budPic.appendTo($budWindow);

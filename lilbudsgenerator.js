@@ -1,6 +1,6 @@
 
-let buds = [
-  {
+let budStorage = {
+  gandalf: {
     name: 'Gandalf',
     type: 'rock',
     maxHp: 20,
@@ -11,7 +11,7 @@ let buds = [
     description: 'Gandalf is a magical bearded dragon who\'s small size is made up for with his powerful monch',
     pic: 'assets/ganbooty.png'
   },
-  {
+  sam: {
     name: 'Sam',
     type: 'ground',
     maxHp: 25,
@@ -22,10 +22,12 @@ let buds = [
     description: 'Sam is big ol cuddly bear-dog with a heart as big as his head',
     pic: 'assets/sam.png'
   }
-];
+};
 
-let attacks = [
-  {
+let buds = Object.keys(budStorage);
+
+let attacks = {
+  glare: {
     name: 'Glare',
     type: 'spooky',
     damage: 0,
@@ -33,7 +35,7 @@ let attacks = [
     enemyAttackMod: -2,
     description: '',
   },
-  {
+  monch: {
     name: 'Monch',
     type: 'spooky',
     damage: 4,
@@ -41,7 +43,7 @@ let attacks = [
     enemyAttackMod: 0,
     description: '',
   },
-  {
+  tailsmack: {
     name: 'Tail Smack',
     type: 'rock',
     damage: 3,
@@ -49,7 +51,7 @@ let attacks = [
     enemyAttackMod: -1,
     description: '',
   },
-  {
+  bask: {
     name: 'Bask',
     type: 'rock',
     damage: 0,
@@ -57,7 +59,7 @@ let attacks = [
     enemyAttackMod: 0,
     description: '',
   },
-  {
+  chomp: {
     name: 'Chomp',
     type: 'spooky',
     damage: 7,
@@ -65,7 +67,7 @@ let attacks = [
     enemyAttackMod: 0,
     description: '',
   },
-  {
+  scratch: {
     name: 'Scratch',
     type: 'spooky',
     damage: 4,
@@ -73,7 +75,7 @@ let attacks = [
     enemyAttackMod: 0,
     description: '',
   },
-  {
+  sleep: {
     name: 'Sleep',
     type: 'sleepy',
     damage: 0,
@@ -81,7 +83,7 @@ let attacks = [
     enemyAttackMod: 0,
     description: '',
   },
-  {
+  slammywammy: {
     name: 'Slammy Wammy',
     type: 'fighting',
     damage: 5,
@@ -89,4 +91,4 @@ let attacks = [
     enemyAttackMod: -1,
     description: '',
   },
-]
+};
