@@ -21,6 +21,10 @@ $(document).ready(function() {
 
   //event handler functions
 
+  var renderBattleStart = function(event) {
+
+  }
+
   var handleStartButtonClick = function(event) {
     //clears the stage, allowing for a new scene to be put in place.
     $app.html('');
@@ -40,6 +44,7 @@ $(document).ready(function() {
 
       var $budPic = $('<img class="bud-pic">');
       $budPic.attr("src", bud.pic);
+      // $budPic.on('click' , /*run something here*/);
 
       var $budName = $('<div class="bud-name"></div>');
       $budName.text("Name: " + bud.name);
