@@ -1,4 +1,5 @@
-let gandalf = {
+let buds = [
+  {
   name: 'gandalf',
   type: 'rock',
   maxHp: 20,
@@ -8,9 +9,8 @@ let gandalf = {
   moves: ['glare', 'monch', 'tail smack', 'bask'],
   description: 'Gandalf is a magical bearded dragon who\'s small size is made up for with his powerful monch',
   pic: 'assets/ganbooty.png'
-}
-
-let sam = {
+},
+{
   name: 'sam',
   type: 'ground',
   maxHp: 25,
@@ -20,7 +20,5 @@ let sam = {
   moves: ['chomp', 'scratch', 'sleep', 'slammy wammy'],
   description: 'Sam is big ol cuddly bear-dog with a heart as big as his head',
   pic: 'assets/sam.png'
-}
-
-let buds = [gandalf, sam];
+}];
 
