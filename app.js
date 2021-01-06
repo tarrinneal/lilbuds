@@ -53,28 +53,31 @@ $(document).ready(function() {
     $chooseBudTitle.appendTo($budSelectScreen);
     $chooseWindow.appendTo($budSelectScreen);
 
-    var displayBuds = function () {
-      buds.forEach(bud => {
-        var $budWindow = $('<div class="bud-window"></div>');
+    buds.forEach(bud => {
+      var $budWindow = $('<div class="bud-window"></div>');
 
-        var $budPic = $('<img class="bud-pic">');
-        $budPic.attr("src", bud.pic);
+      var $budPic = $('<img class="bud-pic">');
+      $budPic.attr("src", bud.pic);
 
-        var $budName = $('<div class="bud-name"></div>');
-        $budName.text("Name: " + bud.name);
+      var $budName = $('<div class="bud-name"></div>');
+      $budName.text("Name: " + bud.name);
 
-        var $budHealth = $('<div class="bud-health"></div>');
-        $budHealth.text("Current HP: " + bud.currentHp);
+      var $budHealth = $('<div class="bud-health"></div>');
+      $budHealth.text("HP: " + bud.currentHp + "/" + bud.maxHp);
+
+      var $budType = $('<div class="bud-type"></div>');
+      $budType.text("Type: " + bud.type);
 
 
 
-        $budPic.appendTo($budWindow);
-        $budName.appendTo($budWindow);
-        $budHealth.appendTo($budWindow);
-        $budWindow.appendTo($chooseWindow);
-      })
-    }
-    displayBuds();
+
+
+      $budPic.appendTo($budWindow);
+      $budName.appendTo($budWindow);
+      $budHealth.appendTo($budWindow);
+      $budType.appendTo($budWindow);
+      $budWindow.appendTo($chooseWindow);
+    })
     $budSelectScreen.appendTo($app);
   }
 
