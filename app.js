@@ -25,7 +25,7 @@ $(document).ready(function() {
   //choose your bud
   //this isn't final, just a test code to see how a battle can work as if it were a function that we called
   //ex ===>  battle(myBud, enemyBud)
-
+  var $budSelectScreen = $('<section class="bud-select-screen"></section>');
   var $battleScreen = $('<section class="battle-screen"></section>');
 
 
@@ -39,7 +39,39 @@ $(document).ready(function() {
 
 
   var handleStartButtonClick = function(event) {
-    console.log(event.target);
+    //clears the stage, allowing for a new scene to be put in place.
+    $app.html('');
+    //run bud selection element builder?
+    renderBudSelectScreen();
+  }
+
+  var renderBudSelectScreen = function () {
+    var $chooseBudTitle = $('<p class="choose-bud-title">Choose your Bud!</p>');
+    var $chooseWindow = $('<div class="choose-window"></div>');
+
+
+    $chooseBudTitle.appendTo($budSelectScreen);
+    $chooseWindow.appendTo($budSelectScreen);
+
+    var displayBuds = function () {
+      buds.forEach(bud => {
+        var $budWindow = $('<div class="bud-window"></div>');
+
+        var $budName = $('<div class="bud-name"></div>');
+        $budName.text(bud.name);
+
+        var $budPic = $('<img class="bud-pic">');
+        $budPic.attr("src", bud.pic);
+
+
+
+        $budName.appendTo($budWindow);
+        $budPic.appendTo($budWindow);
+        $budWindow.appendTo($chooseWindow);
+      })
+    }
+    displayBuds();
+    $budSelectScreen.appendTo($app);
   }
 
 
@@ -64,7 +96,7 @@ $(document).ready(function() {
 
   //set event listeners (providing appropriate handlers as input)
 
-  $battleStartButton.on("click", handleStartButtonClick)
+  $battleStartButton.on("click", handleStartButtonClick);
 
 
 
@@ -79,7 +111,6 @@ $(document).ready(function() {
   $homeScreenHousing.appendTo($app);
   $battleStartButton.appendTo($homeScreenHousing);
 
-  // $battleScreen.appendTo($app);
   // generateMoveButtons(sam);
 
 

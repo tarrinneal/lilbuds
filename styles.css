@@ -4,6 +4,10 @@ html, body, #app {
   background-color: rgb(240, 181, 105);
 }
 
+.bud-pic {
+  width: 20%;
+}
+
 /*
 ---------------Battle Screen----------------
 */

@@ -1,4 +1,5 @@
 let gandalf = {
+  name: 'gandalf',
   type: 'rock',
   maxHp: 20,
   currentHp: 20,
@@ -10,6 +11,7 @@ let gandalf = {
 }
 
 let sam = {
+  name: 'sam',
   type: 'ground',
   maxHp: 25,
   currentHp: 25,
@@ -19,4 +21,6 @@ let sam = {
   description: 'Sam is big ol cuddly bear-dog with a heart as big as his head',
   pic: 'assets/sam.png'
 }
+
+let buds = [gandalf, sam];
 
