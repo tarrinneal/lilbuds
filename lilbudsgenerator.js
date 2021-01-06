@@ -1,6 +1,8 @@
+
 let buds = [
   {
-  name: 'gandalf',
+  name: 'Gandalf',
+
   type: 'rock',
   maxHp: 20,
   currentHp: 20,
@@ -9,9 +11,9 @@ let buds = [
   moves: ['glare', 'monch', 'tail smack', 'bask'],
   description: 'Gandalf is a magical bearded dragon who\'s small size is made up for with his powerful monch',
   pic: 'assets/ganbooty.png'
-},
-{
-  name: 'sam',
+}, 
+  {
+  name: 'Sam',
   type: 'ground',
   maxHp: 25,
   currentHp: 25,
