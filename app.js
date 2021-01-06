@@ -57,16 +57,20 @@ $(document).ready(function() {
       buds.forEach(bud => {
         var $budWindow = $('<div class="bud-window"></div>');
 
-        var $budName = $('<div class="bud-name"></div>');
-        $budName.text(bud.name);
-
         var $budPic = $('<img class="bud-pic">');
         $budPic.attr("src", bud.pic);
 
+        var $budName = $('<div class="bud-name"></div>');
+        $budName.text("Name: " + bud.name);
+
+        var $budHealth = $('<div class="bud-health"></div>');
+        $budHealth.text("Current HP: " + bud.currentHp);
 
 
-        $budName.appendTo($budWindow);
+
         $budPic.appendTo($budWindow);
+        $budName.appendTo($budWindow);
+        $budHealth.appendTo($budWindow);
         $budWindow.appendTo($chooseWindow);
       })
     }

@@ -1,5 +1,5 @@
 let gandalf = {
-  name: 'gandalf',
+  name: 'Gandalf',
   type: 'rock',
   maxHp: 20,
   currentHp: 20,
@@ -11,7 +11,7 @@ let gandalf = {
 }
 
 let sam = {
-  name: 'sam',
+  name: 'Sam',
   type: 'ground',
   maxHp: 25,
   currentHp: 25,
