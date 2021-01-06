@@ -1,3 +1,17 @@
-body {
-  background-color: blue;
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240, 181, 105);
+}
+
+.bud-pic {
+  width: 20%;
+}
+
+/*
+---------------Battle Screen----------------
+*/
+
+.battle-screen {
+  border: 1px solid black;
 }
