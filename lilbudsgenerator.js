@@ -31,62 +31,62 @@ let attacks = [
     damage: 0,
     heal: 0,
     enemyAttackMod: -2,
-    description:
+    description: '',
   },
   {
-    name: 'Monch'
+    name: 'Monch',
     type: 'spooky',
     damage: 4,
     heal: 0,
     enemyAttackMod: 0,
-    description:
+    description: '',
   },
   {
-    name: 'Tail Smack'
+    name: 'Tail Smack',
     type: 'rock',
     damage: 3,
     heal: 0,
     enemyAttackMod: -1,
-    description:
+    description: '',
   },
   {
-    name: 'Bask'
+    name: 'Bask',
     type: 'rock',
     damage: 0,
     heal: 6,
     enemyAttackMod: 0,
-    description:
+    description: '',
   },
   {
-    name: 'Chomp'
+    name: 'Chomp',
     type: 'spooky',
     damage: 7,
     heal: 0,
     enemyAttackMod: 0,
-    description:
+    description: '',
   },
   {
-    name: 'Scratch'
+    name: 'Scratch',
     type: 'spooky',
     damage: 4,
     heal: 0,
     enemyAttackMod: 0,
-    description:
+    description: '',
   },
   {
-    name: 'Sleep'
+    name: 'Sleep',
     type: 'sleepy',
     damage: 0,
     heal: 5,
     enemyAttackMod: 0,
-    description:
+    description: '',
   },
   {
-    name: 'Slammy Wammy'
+    name: 'Slammy Wammy',
     type: 'fighting',
     damage: 5,
     heal: 0,
     enemyAttackMod: -1,
-    description:
+    description: '',
   },
 ]

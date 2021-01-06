@@ -55,11 +55,11 @@ $(document).ready(function() {
       var $budType = $('<div class="bud-type"></div>');
       $budType.text("Type: " + bud.type);
 
+      $budWindow.appendTo($chooseWindow);
       $budPic.appendTo($budWindow);
       $budName.appendTo($budWindow);
       $budHealth.appendTo($budWindow);
       $budType.appendTo($budWindow);
-      $budWindow.appendTo($chooseWindow);
     })
 
     $budSelectScreen.appendTo($app);
