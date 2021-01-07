@@ -95,7 +95,7 @@ $(document).ready(function() {
     var moveList = budStorage[bud].moves;
     var $moveListBox = $('<div class="move-list-box"></div>');
     for (var i = 0; i < moveList.length; i++) {
-      $moveButton = $('<button class="move-button move-' + (i+1) +'">' + moveList[i] + '</button>')
+      $moveButton = $('<button class="move-button move-' + (i+1) +'">' + attacks[moveList[i]].name + '</button>')
       $moveButton.appendTo($moveListBox);
       //add event handler
     }
