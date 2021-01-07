@@ -7,8 +7,8 @@ body {
 }
 #app {
   border: black dotted;
-  height:70%;
-  width: 90%;
+  height:700px;
+  width: 1000px;
   background-color: rgba(0, 0, 0,0);
 }
 
