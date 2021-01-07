@@ -12,7 +12,7 @@ $(document).ready(function() {
   //create new HTML elements
 
   var $homeScreenHousing = $('<section class="home-screen-housing"></section>');
-  var $battleStartButton = $('<button class="battle-start-button">Let\'s Battle!</button>');
+  var $battleStartButton = $('<button class="button battle-start-button">Let\'s Battle!</button>');
 
   var $budSelectScreen = $('<section class="bud-select-screen"></section>');
   var $battleScreen = $('<section class="battle-screen"></section>');
@@ -66,7 +66,7 @@ $(document).ready(function() {
   }
 
   var generateMoveButtons = function(bud) {
-    var moveList = bud.moves;
+    var moveList = budStorage[bud].moves;
     var $moveListBox = $('<div class="move-list-box"></div>');
     for (var i = 0; i < moveList.length; i++) {
       $moveButton = $('<button class="move-' + (i+1) +'">' + moveList[i] + '</button>')
