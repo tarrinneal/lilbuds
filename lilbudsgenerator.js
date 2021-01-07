@@ -1,6 +1,7 @@
 
 let budStorage = {
   gandalf: {
+    key: 'gandalf',
     name: 'Gandalf',
     type: 'rock',
     maxHp: 20,
@@ -12,6 +13,7 @@ let budStorage = {
     pic: 'assets/ganbooty.png'
   },
   sam: {
+    key: 'sam',
     name: 'Sam',
     type: 'ground',
     maxHp: 25,
