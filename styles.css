@@ -22,3 +22,28 @@ html, body, #app {
 .button:hover {
   cursor: pointer;
 }
+
+/*
+---------------Buds window----------------
+*/
+.choose-window {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: auto;
+}
+.bud-window {
+  display: grid;
+  grid-template-rows: 65%;
+  border: black solid;
+  border-radius: 15px;
+  height: 200px;
+  margin: 5px;
+}
+.bud-window:hover {
+  cursor: pointer;
+}
+.bud-pic {
+  width: 95%;
+  height: 95%;
+  margin: 2.5%;
+}
