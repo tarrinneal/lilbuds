@@ -1,5 +1,22 @@
 {
-"scripts": {
-  "start": "lilbuds.html"
-}
+  "name": "lilbuds",
+  "version": "1.0.0",
+  "description": "lilbuds",
+  "main": "lilbuds.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarrinneal/lilbuds.git"
+  },
+  "author": "tarrin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarrinneal/lilbuds/issues"
+  },
+  "homepage": "https://github.com/tarrinneal/lilbuds#readme"
 }
