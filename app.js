@@ -20,8 +20,8 @@ $(document).ready(function() {
 
 
   //event handler functions
-  var attacker = '';
-  var defender = '';
+  var attacker;
+  var defender;
 
   var handleStartButtonClick = function(event) {
     //clears the stage, allowing for a new scene to be put in place.
@@ -48,8 +48,8 @@ $(document).ready(function() {
   }
 
   var handleLilBudClick = function (event) {
-    attacker = event.currentTarget.id;
-    startFight(attacker)
+    attacker = {...budStorage[event.currentTarget.id]};
+    startFight(event.currentTarget.id)
   }
 
   var makeBudCard = function (bud) {
@@ -81,12 +81,16 @@ $(document).ready(function() {
     return buds[randomIndex]
   }
 
-  var startFight = function(bud) {
+  var startFight = function(bud, evil) {
     $app.html('');
     var $budWindow = makeBudCard(bud);
     $budWindow.appendTo($battleScreen);
-    var evilBud = randomBud()
-    defender = evilBud;
+    if (evil) {
+      evilBud = evil;
+    } else {
+      var evilBud = randomBud()
+    }
+    defender = {...budStorage[evilBud]};
     var $evilBudWindow = makeBudCard(evilBud);
     $evilBudWindow.attr('id', 'evil-bud');
     $evilBudWindow.appendTo($battleScreen)
@@ -110,12 +114,18 @@ $(document).ready(function() {
     var move = event.currentTarget.id
     attackMaker(move);
     var $moveListBox = $('.move-list-box');
-    $moveListBox.html('');
+    // $moveListBox.html('');
     //finish this
   }
 
   var attackMaker = function (attack) {
 //attacker and defender are global variables now, we'll need to change the hp and other stats, then refresh the cards probably, unless we can refresh just the hp on screen
+    attacker.currentHp += attacks[attack].heal;
+    defender.currentHp -= attacks[attack].damage;
+    console.log(attacker)
+    startFight(attacker.key, defender.key)
+    //need to access hp from new objects might have to rewrite the card maker function
+    //also need to delete and redraw cards to avoid dupes
 
 //finish this
   }
