@@ -38,7 +38,7 @@ $(document).ready(function() {
     $chooseWindow.appendTo($budSelectScreen);
 
     buds.forEach(bud => {
-      $budWindow = makeBudCard(bud)
+      $budWindow = makeBudCard(budStorage[bud])
       $budWindow.appendTo($chooseWindow);
 
       $budWindow.on('click', handleLilBudClick);
@@ -49,24 +49,24 @@ $(document).ready(function() {
 
   var handleLilBudClick = function (event) {
     attacker = {...budStorage[event.currentTarget.id]};
-    startFight(event.currentTarget.id)
+    startFight(attacker)
   }
 
   var makeBudCard = function (bud) {
-    var $budWindow = $('<div id="' + bud + '" class="bud-window"></div>');
+    var $budWindow = $('<div id="' + bud.key + '" class="bud-window"></div>');
 
     var $budPic = $('<img class="bud-pic">');
-    $budPic.attr("src", budStorage[bud].pic);
+    $budPic.attr("src", bud.pic);
     // $budPic.on('click' , /*run something here*/);
 
     var $budName = $('<div class="bud-name"></div>');
-    $budName.text("Name: " + budStorage[bud].name);
+    $budName.text("Name: " + bud.name);
 
     var $budHealth = $('<div class="bud-health"></div>');
-    $budHealth.text("HP: " + budStorage[bud].currentHp + "/" + budStorage[bud].maxHp);
+    $budHealth.text("HP: " + bud.currentHp + "/" + bud.maxHp);
 
     var $budType = $('<div class="bud-type"></div>');
-    $budType.text("Type: " + budStorage[bud].type);
+    $budType.text("Type: " + bud.type);
 
     // $budWindow.appendTo($chooseWindow);
     $budPic.appendTo($budWindow);
@@ -81,17 +81,15 @@ $(document).ready(function() {
     return buds[randomIndex]
   }
 
-  var startFight = function(bud, evil) {
+  var startFight = function(bud, evilBud = randomBud()) {
     $app.html('');
+    $battleScreen.html('');
     var $budWindow = makeBudCard(bud);
     $budWindow.appendTo($battleScreen);
-    if (evil) {
-      evilBud = evil;
-    } else {
-      var evilBud = randomBud()
+    if (!defender) {
+      defender = {...budStorage[evilBud]};
     }
-    defender = {...budStorage[evilBud]};
-    var $evilBudWindow = makeBudCard(evilBud);
+    var $evilBudWindow = makeBudCard(defender);
     $evilBudWindow.attr('id', 'evil-bud');
     $evilBudWindow.appendTo($battleScreen)
     generateMoveButtons(bud)
@@ -99,7 +97,7 @@ $(document).ready(function() {
   }
 
   var generateMoveButtons = function(bud) {
-    var moveList = budStorage[bud].moves;
+    var moveList = bud.moves;
     var $moveListBox = $('<div class="move-list-box"></div>');
     for (var i = 0; i < moveList.length; i++) {
       $moveButton = $('<button id="' + moveList[i] + '" class="move-button move-' + (i+1) +'">' + attacks[moveList[i]].name + '</button>')
@@ -110,20 +108,28 @@ $(document).ready(function() {
   }
 
   var attackClickHandler = function(event) {
-    console.log(event)//---------------------------------------------remove
     var move = event.currentTarget.id
-    attackMaker(move);
+    attackMaker(move, attacker, defender);
     var $moveListBox = $('.move-list-box');
     // $moveListBox.html('');
+    //add text for changes and clickthrough button
     //finish this
   }
 
-  var attackMaker = function (attack) {
+  var attackMaker = function (attack, damageDoer, damageReciever) {
 //attacker and defender are global variables now, we'll need to change the hp and other stats, then refresh the cards probably, unless we can refresh just the hp on screen
-    attacker.currentHp += attacks[attack].heal;
-    defender.currentHp -= attacks[attack].damage;
-    console.log(attacker)
-    startFight(attacker.key, defender.key)
+    if (damageDoer.currentHp + attacks[attack].heal > damageDoer.maxHp) {
+      damageDoer.currentHp = damageDoer.maxHp;
+    } else {
+      damageDoer.currentHp += attacks[attack].heal;
+    }
+    if (damageReciever.currentHp - attacks[attack].damage < 0) {
+      damageReciever.currentHp = 0;
+    } else {
+      damageReciever.currentHp -= attacks[attack].damage;
+    }
+    // impliment other types of attacks, status changes etc
+    startFight(attacker, defender)
     //need to access hp from new objects might have to rewrite the card maker function
     //also need to delete and redraw cards to avoid dupes
 
