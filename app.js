@@ -111,8 +111,14 @@ $(document).ready(function() {
     var move = event.currentTarget.id
     attackMaker(move, attacker, defender);
     var $moveListBox = $('.move-list-box');
-    // $moveListBox.html('');
+    $moveListBox.html('');
+
     //add text for changes and clickthrough button
+    //add enemy attack and text etc
+    var randomMove = defender.moves[Math.floor(Math.random() * defender.moves.length)]
+    attackMaker(randomMove, defender, attacker)
+    startFight(attacker, defender)
+    generateMoveButtons(attacker);
     //finish this
   }
 
@@ -129,11 +135,7 @@ $(document).ready(function() {
       damageReciever.currentHp -= attacks[attack].damage;
     }
     // impliment other types of attacks, status changes etc
-    startFight(attacker, defender)
-    //need to access hp from new objects might have to rewrite the card maker function
-    //also need to delete and redraw cards to avoid dupes
 
-//finish this
   }
 
 
