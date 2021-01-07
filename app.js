@@ -20,6 +20,8 @@ $(document).ready(function() {
 
 
   //event handler functions
+  var attacker = '';
+  var defender = '';
 
   var handleStartButtonClick = function(event) {
     //clears the stage, allowing for a new scene to be put in place.
@@ -46,8 +48,8 @@ $(document).ready(function() {
   }
 
   var handleLilBudClick = function (event) {
-    console.log(event);
-    startFight(event.currentTarget.id)
+    attacker = event.currentTarget.id;
+    startFight(attacker)
   }
 
   var makeBudCard = function (bud) {
@@ -84,6 +86,7 @@ $(document).ready(function() {
     var $budWindow = makeBudCard(bud);
     $budWindow.appendTo($battleScreen);
     var evilBud = randomBud()
+    defender = evilBud;
     var $evilBudWindow = makeBudCard(evilBud);
     $evilBudWindow.attr('id', 'evil-bud');
     $evilBudWindow.appendTo($battleScreen)
@@ -95,11 +98,26 @@ $(document).ready(function() {
     var moveList = budStorage[bud].moves;
     var $moveListBox = $('<div class="move-list-box"></div>');
     for (var i = 0; i < moveList.length; i++) {
-      $moveButton = $('<button class="move-button move-' + (i+1) +'">' + attacks[moveList[i]].name + '</button>')
+      $moveButton = $('<button id="' + moveList[i] + '" class="move-button move-' + (i+1) +'">' + attacks[moveList[i]].name + '</button>')
       $moveButton.appendTo($moveListBox);
-      //add event handler
+      $moveButton.on('click', attackClickHandler);
     }
     $moveListBox.appendTo($battleScreen);
+  }
+
+  var attackClickHandler = function(event) {
+    console.log(event)//---------------------------------------------remove
+    var move = event.currentTarget.id
+    attackMaker(move);
+    var $moveListBox = $('.move-list-box');
+    $moveListBox.html('');
+    //finish this
+  }
+
+  var attackMaker = function (attack) {
+//attacker and defender are global variables now, we'll need to change the hp and other stats, then refresh the cards probably, unless we can refresh just the hp on screen
+
+//finish this
   }
 
 
