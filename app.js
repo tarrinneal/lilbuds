@@ -3,19 +3,24 @@
 $(document).ready(function() {
 
 
-  //select already existing elements
   var $app = $('#app');
-  $app.html('');
 
 
 
-  //create new HTML elements
 
-  var $homeScreenHousing = $('<div class="home-screen-housing"></div>');
-  var $battleStartButton = $('<button class="button battle-start-button">Let\'s Battle!</button>');
+  var start = function () {
+    $app.html('');
+    var $homeScreenHousing = $('<div class="home-screen-housing"></div>');
+    var $battleStartButton = $('<button class="button battle-start-button">Let\'s Battle!</button>');
 
-  var $budSelectScreen = $('<section class="bud-select-screen"></section>');
-  var $battleScreen = $('<section class="battle-screen"></section>');
+
+
+
+    $homeScreenHousing.appendTo($app);
+    $battleStartButton.appendTo($homeScreenHousing);
+    $battleStartButton.on('click', handleStartButtonClick);
+  }
+
 
 
 
@@ -24,6 +29,7 @@ $(document).ready(function() {
   var defender;
 
   var handleStartButtonClick = function(event) {
+    console.log(event)
     //clears the stage, allowing for a new scene to be put in place.
     $app.html('');
     //run bud selection element builder?
@@ -31,6 +37,7 @@ $(document).ready(function() {
   }
 
   var renderBudSelectScreen = function () {
+    var $budSelectScreen = $('<section class="bud-select-screen"></section>');
     var $chooseBudTitle = $('<p class="choose-bud-title">Choose your Bud!</p>');
     var $chooseWindow = $('<div class="choose-window"></div>');
 
@@ -83,6 +90,7 @@ $(document).ready(function() {
 
   var startFight = function(bud, evilBud = randomBud()) {
     $app.html('');
+    var $battleScreen = $('<section class="battle-screen"></section>');
     $battleScreen.html('');
     var $budWindow = makeBudCard(bud);
     $budWindow.appendTo($battleScreen);
@@ -92,11 +100,12 @@ $(document).ready(function() {
     var $evilBudWindow = makeBudCard(defender);
     $evilBudWindow.attr('id', 'evil-bud');
     $evilBudWindow.appendTo($battleScreen)
-    generateMoveButtons(bud)
+    generateMoveButtons(bud).appendTo($battleScreen)
     $battleScreen.appendTo($app)
   }
 
   var generateMoveButtons = function(bud) {
+    var $battleScreen = $('.battle-screen');
     var moveList = bud.moves;
     var $moveListBox = $('<div class="move-list-box"></div>');
     for (var i = 0; i < moveList.length; i++) {
@@ -104,22 +113,52 @@ $(document).ready(function() {
       $moveButton.appendTo($moveListBox);
       $moveButton.on('click', attackClickHandler);
     }
-    $moveListBox.appendTo($battleScreen);
+    return $moveListBox;
   }
 
   var attackClickHandler = function(event) {
     var move = event.currentTarget.id
     attackMaker(move, attacker, defender);
+    startFight(attacker, defender);
     var $moveListBox = $('.move-list-box');
     $moveListBox.html('');
+    $movedButton = $('<button class="moved-button button">' + attacker.name + ' used ' + attacks[move].name + attackDid(move) + '</button>')
+    $movedButton.appendTo($moveListBox);
 
-    //add text for changes and clickthrough button
-    //add enemy attack and text etc
+    $movedButton.on('click', movedButtonHandler)
+  }
+
+  var attackDid = function (move) {
+    var result = ''
+    if (attacks[move].damage !== 0) {
+      result += ' and did ' + attacks[move].damage + ' damage'
+    }
+    if (attacks[move].heal !== 0) {
+      result += ' and healed ' + attacks[move].heal + ' hp'
+    }
+    //add the rest of the things  the moves can do
+    return result + '!'
+  }
+
+  var movedButtonHandler = function() {
+    if (defender.currentHp === 0) {
+      gameEndWin()
+      return;
+    }
     var randomMove = defender.moves[Math.floor(Math.random() * defender.moves.length)]
     attackMaker(randomMove, defender, attacker)
+    startFight(attacker, defender);
+    var $moveListBox = $('.move-list-box');
+    $moveListBox.html('');
+    $continueFightButton = $('<button class="moved-button button">Enemy ' + defender.name + ' used ' + attacks[randomMove].name + ' and ' + attackDid(randomMove) + '</button>')
+    $continueFightButton.appendTo($moveListBox);
+
+    $continueFightButton.on('click', continueFight)
+  }
+
+  var continueFight = function() {
     startFight(attacker, defender)
     generateMoveButtons(attacker);
-    //finish this
   }
 
   var attackMaker = function (attack, damageDoer, damageReciever) {
@@ -138,21 +177,27 @@ $(document).ready(function() {
 
   }
 
+  var gameEndWin = function () {
+    $app.html('');
+    alert('YOU WIN!!!!!!!')
+    $playAgainButton = $('<button class="play-again-button button">Play Again?</button>')
+    $playAgainButton.appendTo($app);
+
+    $playAgainButton.on('click', reset)
+  }
+
+  var reset = function () {
+    attacker = undefined;
+    defender = undefined;
+    start()
+  }
 
 
-  //set event listeners (providing appropriate handlers as input)
-
-  $battleStartButton.on('click', handleStartButtonClick);
 
 
 
-  //append new HTML elements to the DOM
 
-  $homeScreenHousing.appendTo($app);
-  $battleStartButton.appendTo($homeScreenHousing);
-
-
-
+start();
 });
 
 
