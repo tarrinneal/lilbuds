@@ -1,7 +1,15 @@
 html, body, #app {
   height: 100%;
   width: 100%;
-  background-color: rgb(240, 181, 105);
+}
+body {
+  background-color: #6545B2;
+}
+#app {
+  border: black dotted;
+  height:70%;
+  width: 90%;
+  background-color: rgba(0, 0, 0,0);
 }
 
 .bud-pic {
@@ -9,16 +17,25 @@ html, body, #app {
 }
 
 /*
----------------Battle Screen----------------
-*/
-
-.battle-screen {
-  border: 1px solid black;
-}
-
-/*
 ---------------Buttons----------------
 */
+.home-screen-housing {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+  height: 100%;
+  width: 100%;
+}
+.battle-start-button {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 72px;
+  text-transform: uppercase;
+  background-color: cornflowerblue;
+  border-radius: 15px 75px;
+  box-shadow: 25px 15px black;
+
+}
 .button:hover {
   cursor: pointer;
 }
@@ -31,12 +48,17 @@ html, body, #app {
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: auto;
 }
+/*
+---------------Buds cards----------------
+*/
 .bud-window {
   display: grid;
-  grid-template-rows: 65%;
+  grid-template-rows: 65%, 10%, 10%, 10%;
   border: black solid;
   border-radius: 15px;
-  height: 200px;
+  background-color: aquamarine;
+  max-width: 300px;
+  max-height: 400px;
   margin: 5px;
 }
 .bud-window:hover {
@@ -44,6 +66,52 @@ html, body, #app {
 }
 .bud-pic {
   width: 95%;
-  height: 95%;
+  max-height: 95%;
   margin: 2.5%;
+  grid-row: 1;
+}
+.bud-name {
+  grid-row: 2;
+}
+.bud-health {
+  grid-row: 3;
+}
+.bud-type {
+  grid-row: 4;
+}
+#evil-bud .bud-pic {
+  transform: scaleX(-1);
+}
+/*
+---------------Attacks----------------
+*/
+.move-list-box {
+  display: grid;
+  /* grid-template-rows: 50%, 50%;
+  grid-template-columns: 50%, 50%; */
+}
+.move-button:hover {
+  cursor: pointer;
+}
+/*
+---------------Battle Screen----------------
+*/
+.battle-screen {
+  display: grid;
+  grid-template-columns: [first] 300px [line2] auto [last] 300px;
+  grid-template-rows: [start] 70% [end] auto ;
+  height: 100%;
+}
+
+#evil-bud {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+/*
+---------------Battle Screen----------------
+*/
+.move-list-box {
+  grid-column: 1 / span 3;
+  grid-row: 2;
 }
