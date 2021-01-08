@@ -652,7 +652,7 @@ let budStorage = {
   },
 };
 
-let buds = Object.keys(budStorage);
+let buds = Object.keys(budStorage).sort();
 
 let attacks = {
   glare: {
