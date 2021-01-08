@@ -8,10 +8,10 @@ $(document).ready(function() {
 
 
 
-  var start = function () {
+  var start = function (state = 'Let\'s Battle!') {
     $app.html('');
     var $homeScreenHousing = $('<div class="home-screen-housing"></div>');
-    var $battleStartButton = $('<button class="button battle-start-button">Let\'s Battle!</button>');
+    var $battleStartButton = $('<button class="button battle-start-button">' + state + '</button>');
 
 
     $homeScreenHousing.appendTo($app);
@@ -120,16 +120,16 @@ $(document).ready(function() {
     startFight(attacker, defender);
     var $moveListBox = $('.move-list-box');
     $moveListBox.html('');
-    $movedButton = $('<button class="moved-button button">' + attacker.name + ' used ' + attacks[move].name + attackDid(move) + '</button>')
+    $movedButton = $('<button class="moved-button button">' + attacker.name + ' used ' + attacks[move].name + attackDid(move, attacker, defender) + '</button>')
     $movedButton.appendTo($moveListBox);
 
     $movedButton.on('click', movedButtonHandler)
   }
 
-  var attackDid = function (move) {
+  var attackDid = function (move, damageDoer, damageReciever) {
     var result = ''
     if (attacks[move].damage !== 0) {
-      result += ' and did ' + attacks[move].damage + ' damage'
+      result += ' and did ' + damageCalc(move, damageDoer, damageReciever) + ' damage'
     }
     if (attacks[move].heal !== 0) {
       result += ' and healed ' + attacks[move].heal + ' hp'
@@ -150,7 +150,7 @@ $(document).ready(function() {
     startFight(attacker, defender);
     var $moveListBox = $('.move-list-box');
     $moveListBox.html('');
-    $continueFightButton = $('<button class="moved-button button">Enemy ' + defender.name + ' used ' + attacks[randomMove].name + ' and ' + attackDid(randomMove) + '</button>')
+    $continueFightButton = $('<button class="moved-button button">Enemy ' + defender.name + ' used ' + attacks[randomMove].name + ' and ' + attackDid(randomMove, defender, attacker) + '</button>')
     $continueFightButton.appendTo($moveListBox);
 
     $continueFightButton.on('click', continueFight)
@@ -169,36 +169,30 @@ $(document).ready(function() {
   }
 
   var attackMaker = function (attack, damageDoer, damageReciever) {
+    var totalDamage = damageCalc(attack, damageDoer, damageReciever)
+    console.log(totalDamage)
     if (damageDoer.currentHp + attacks[attack].heal > damageDoer.maxHp) {
       damageDoer.currentHp = damageDoer.maxHp;
     } else {
       damageDoer.currentHp += attacks[attack].heal;
     }
-    if (damageReciever.currentHp - attacks[attack].damage < 0) {
+    if (damageReciever.currentHp - totalDamage < 0) {
       damageReciever.currentHp = 0;
     } else {
-      damageReciever.currentHp -= attacks[attack].damage;
+      damageReciever.currentHp -= totalDamage;
     }
     // impliment other types of attacks, status changes etc
+  }
 
+  var damageCalc = function (attack, damageDoer, damageReciever) {
+    return Math.ceil(attacks[attack].damage * (damageDoer.baseAtk / damageReciever.def))
   }
 
   var gameEnd = function () {
-
-    $playAgainButton = $('<button class="play-again-button button">Play Again?</button>')
-    $playAgainButton.appendTo($app);
-
-    $playAgainButton.on('click', reset)
-  }
-
-  var reset = function () {
-
     attacker = undefined;
     defender = undefined;
-    start()
+    start('Play Again?')
   }
-
-
 
 start();
 });
