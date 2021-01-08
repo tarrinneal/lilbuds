@@ -14,8 +14,6 @@ $(document).ready(function() {
     var $battleStartButton = $('<button class="button battle-start-button">Let\'s Battle!</button>');
 
 
-
-
     $homeScreenHousing.appendTo($app);
     $battleStartButton.appendTo($homeScreenHousing);
     $battleStartButton.on('click', handleStartButtonClick);
