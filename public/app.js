@@ -142,7 +142,9 @@ $(document).ready(function() {
 
   var movedButtonHandler = function() {
     if (defender.currentHp === 0) {
-      gameEndWin()
+      $app.html('');
+      alert('YOU WIN!!!!!!!')
+      gameEnd()
       return;
     }
     var randomMove = defender.moves[Math.floor(Math.random() * defender.moves.length)]
@@ -157,8 +159,15 @@ $(document).ready(function() {
   }
 
   var continueFight = function() {
-    startFight(attacker, defender)
-    generateMoveButtons(attacker);
+    if (attacker.currentHp === 0) {
+      $app.html('');
+      alert('YOU LOSE')
+      gameEnd()
+      return;
+    } else {
+      startFight(attacker, defender)
+      generateMoveButtons(attacker);
+    }
   }
 
   var attackMaker = function (attack, damageDoer, damageReciever) {
@@ -176,9 +185,8 @@ $(document).ready(function() {
 
   }
 
-  var gameEndWin = function () {
-    $app.html('');
-    alert('YOU WIN!!!!!!!')
+  var gameEnd = function () {
+
     $playAgainButton = $('<button class="play-again-button button">Play Again?</button>')
     $playAgainButton.appendTo($app);
 
@@ -186,6 +194,7 @@ $(document).ready(function() {
   }
 
   var reset = function () {
+
     attacker = undefined;
     defender = undefined;
     start()

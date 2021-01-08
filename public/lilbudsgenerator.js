@@ -7,7 +7,8 @@ let budStorage = {
     maxHp: 20,
     currentHp: 20,
     baseAtk: 10,
-    specialAtk: 17,
+    def: 20,
+    evade: 5,
     moves: ['glare', 'monch', 'tailsmack', 'bask'],
     description: 'Gandalf is a magical bearded dragon who\'s small size is made up for with his powerful monch',
     pic: 'assets/ganbooty.png'
@@ -20,6 +21,8 @@ let budStorage = {
     currentHp: 25,
     baseAtk: 12,
     specialAtk: 5,
+    def: 12,
+    evade: 9,
     moves: ['chomp', 'scratch', 'sleep', 'slammywammy'],
     description: 'Sam is big ol cuddly bear-dog with a heart as big as his head',
     pic: 'assets/sam.png'
