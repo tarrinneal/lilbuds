@@ -8,14 +8,17 @@ $(document).ready(function() {
 
 
 
-  var start = function (state = 'Let\'s Battle!') {
+  var start = function (state = 'Let\'s Battle!', last) {
     $app.html('');
     var $homeScreenHousing = $('<div class="home-screen-housing"></div>');
     var $battleStartButton = $('<button class="button battle-start-button">' + state + '</button>');
-
+    var $lastDiv = $('<div class="last-game-state">' + last + '</div>');
 
     $homeScreenHousing.appendTo($app);
     $battleStartButton.appendTo($homeScreenHousing);
+    if (last) {
+      $lastDiv.appendTo($homeScreenHousing);
+    }
     $battleStartButton.on('click', handleStartButtonClick);
   }
 
@@ -141,8 +144,7 @@ $(document).ready(function() {
   var movedButtonHandler = function() {
     if (defender.currentHp === 0) {
       $app.html('');
-      alert('YOU WIN!!!!!!!')
-      gameEnd()
+      gameEnd('YOU WIN!');
       return;
     }
     var randomMove = defender.moves[Math.floor(Math.random() * defender.moves.length)]
@@ -159,8 +161,7 @@ $(document).ready(function() {
   var continueFight = function() {
     if (attacker.currentHp === 0) {
       $app.html('');
-      alert('YOU LOSE')
-      gameEnd()
+      gameEnd('YOU LOSE!')
       return;
     } else {
       startFight(attacker, defender)
@@ -170,7 +171,6 @@ $(document).ready(function() {
 
   var attackMaker = function (attack, damageDoer, damageReciever) {
     var totalDamage = damageCalc(attack, damageDoer, damageReciever)
-    console.log(totalDamage)
     if (damageDoer.currentHp + attacks[attack].heal > damageDoer.maxHp) {
       damageDoer.currentHp = damageDoer.maxHp;
     } else {
@@ -188,10 +188,10 @@ $(document).ready(function() {
     return Math.ceil(attacks[attack].damage * (damageDoer.baseAtk / damageReciever.def))
   }
 
-  var gameEnd = function () {
+  var gameEnd = function (state) {
     attacker = undefined;
     defender = undefined;
-    start('Play Again?')
+    start('Play Again?', state)
   }
 
 start();

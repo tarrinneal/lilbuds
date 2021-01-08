@@ -144,3 +144,20 @@ body {
   grid-column: 1 / span 3;
   grid-row: 2;
 }
+
+/*
+---------------After game----------------
+*/
+
+.last-game-state {
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+  font-size: 52px;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
