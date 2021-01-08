@@ -455,9 +455,9 @@ let budStorage = {
     description: 'Anton Menchaca dog',
     pic: 'assets/Antons Menchaca dog.png'
   },
-  academikDog: {
-    key: 'academikDog',
-    name: 'Academik Dog',
+  tucker: {
+    key: 'tucker',
+    name: 'Tucker',
     type: 'ground',
     maxHp: 40,
     currentHp: 40,
@@ -492,7 +492,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Ciaddie Rutelionis Dog',
-    pic: 'assets/Ciaddie Rutelionis Dog.png'
+    pic: 'assets/Ciaddie Rutelionis dog.png'
   },
   dmDog: {
     key: 'dmDog',
@@ -505,7 +505,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Daryll Mamarils Dog',
-    pic: 'assets/Daryll Mamarils Dog.png'
+    pic: 'assets/Daryll Mamarils dog.png'
   },
   enDog: {
     key: 'enDog',
@@ -518,7 +518,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Evan Nouis Dog',
-    pic: 'assets/Evan Nouis Dog.png'
+    pic: 'assets/Evan Nouis dog.png'
   },
   gkDog: {
     key: 'gkDog',
@@ -531,7 +531,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Graham Kirshs Dog',
-    pic: 'assets/Graham Kirshs Dog.png'
+    pic: 'assets/Graham Kirshs dog.png'
   },
   hlDog: {
     key: 'hlDog',
@@ -544,7 +544,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Haoshen Lis Dog',
-    pic: 'assets/Haoshen Lis Dog.png'
+    pic: 'assets/Haoshen Lis dog.png'
   },
   hwDog: {
     key: 'hwDog',
@@ -557,7 +557,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Henry Waltons Dog',
-    pic: 'assets/Henry Waltons geriatric Dog.png'
+    pic: 'assets/Henry Waltons geriatric dog.png'
   },
   rkDog: {
     key: 'rkDog',
@@ -570,7 +570,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Reuben Kirshs Dog',
-    pic: 'assets/Reuben Kirshs Dog.png'
+    pic: 'assets/Reuben Kirshs dog.png'
   },
   rzDog: {
     key: 'rzDog',
@@ -583,7 +583,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Ricky Zhaos Dog',
-    pic: 'assets/Ricky Zhaos Dog.png'
+    pic: 'assets/Ricky Zhaos dog.png'
   },
   rsCat: {
     key: 'rsCat',
