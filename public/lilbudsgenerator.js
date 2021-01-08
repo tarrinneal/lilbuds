@@ -442,9 +442,9 @@ let budStorage = {
     description: '',
     pic: 'assets/Vlakyrie.png'
   },
-  amDog: {
-    key: 'amDog',
-    name: 'AM Dog',
+  suki: {
+    key: 'suki',
+    name: 'Suki',
     type: 'ground',
     maxHp: 40,
     currentHp: 40,
@@ -452,7 +452,7 @@ let budStorage = {
     def: 15,
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
-    description: 'Anton Menchaca dog',
+    description: 'Suki may not look it, but she is actually a powerful warrior!',
     pic: 'assets/Antons Menchaca dog.png'
   },
   tucker: {
@@ -481,9 +481,9 @@ let budStorage = {
     description: 'Chloe Palmers Dog',
     pic: 'assets/Chloe Palmers dog.png'
   },
-  crDog: {
-    key: 'crDog',
-    name: 'CR Dog',
+  halo: {
+    key: 'halo',
+    name: 'Halo',
     type: 'ground',
     maxHp: 40,
     currentHp: 40,
@@ -491,7 +491,7 @@ let budStorage = {
     def: 15,
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
-    description: 'Ciaddie Rutelionis Dog',
+    description: 'Halo is an innocent little angel, until she doesn\'t get what she wants!',
     pic: 'assets/Ciaddie Rutelionis dog.png'
   },
   dmDog: {
@@ -585,9 +585,9 @@ let budStorage = {
     description: 'Ricky Zhaos Dog',
     pic: 'assets/Ricky Zhaos dog.png'
   },
-  rsCat: {
-    key: 'rsCat',
-    name: 'RS Cat',
+  piper: {
+    key: 'piper',
+    name: 'Piper',
     type: 'ground',
     maxHp: 40,
     currentHp: 40,
@@ -595,12 +595,12 @@ let budStorage = {
     def: 15,
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
-    description: 'rob scherers car',
+    description: 'Everyone at some point will have to pay Piper',
     pic: 'assets/rob scherers cat.png'
   },
-  rsDog: {
-    key: 'rsDog',
-    name: 'RS Dog',
+  maddox: {
+    key: 'maddox',
+    name: 'Maddox',
     type: 'ground',
     maxHp: 40,
     currentHp: 40,
@@ -608,7 +608,7 @@ let budStorage = {
     def: 15,
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
-    description: 'rob scherers Dog',
+    description: 'Despite his calm demeaner, he can sometimes truly be mad',
     pic: 'assets/rob scherers dog.png'
   },
   snCat: {
@@ -624,9 +624,9 @@ let budStorage = {
     description: 'Sim Neyzis cat',
     pic: 'assets/Sim Neyzis cat.png'
   },
-  tdCat: {
-    key: 'tdCat',
-    name: 'TD Cat',
+  donna: {
+    key: 'donna',
+    name: 'Donna',
     type: 'ground',
     maxHp: 40,
     currentHp: 40,
@@ -634,7 +634,7 @@ let budStorage = {
     def: 15,
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
-    description: 'Teva Dagais cat',
+    description: 'Donna is often confused for a tumbleweed of fur',
     pic: 'assets/Teva Dagais cat.png'
   },
   thDog: {
