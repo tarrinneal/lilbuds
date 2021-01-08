@@ -109,7 +109,7 @@ $(document).ready(function() {
     var moveList = bud.moves;
     var $moveListBox = $('<div class="move-list-box"></div>');
     for (var i = 0; i < moveList.length; i++) {
-      $moveButton = $('<button id="' + moveList[i] + '" class="move-button move-' + (i+1) +'">' + attacks[moveList[i]].name + '</button>')
+      $moveButton = $('<button id="' + moveList[i] + '" class="button move-button move-' + (i+1) +'">' + attacks[moveList[i]].name + '</button>')
       $moveButton.appendTo($moveListBox);
       $moveButton.on('click', attackClickHandler);
     }
@@ -162,7 +162,6 @@ $(document).ready(function() {
   }
 
   var attackMaker = function (attack, damageDoer, damageReciever) {
-//attacker and defender are global variables now, we'll need to change the hp and other stats, then refresh the cards probably, unless we can refresh just the hp on screen
     if (damageDoer.currentHp + attacks[attack].heal > damageDoer.maxHp) {
       damageDoer.currentHp = damageDoer.maxHp;
     } else {
@@ -191,9 +190,6 @@ $(document).ready(function() {
     defender = undefined;
     start()
   }
-
-
-
 
 
 

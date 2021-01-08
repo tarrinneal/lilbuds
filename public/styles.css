@@ -4,6 +4,7 @@ html, body, #app {
 }
 body {
   background-color: #6545B2;
+  font-family: 'Goldman', 'Courier New', Courier, monospace;
 }
 #app {
   border: black dotted;
@@ -29,7 +30,7 @@ body {
 .battle-start-button {
   grid-column: 2;
   grid-row: 2;
-  font-size: 72px;
+  font-size: 70px;
   text-transform: uppercase;
   background-color: cornflowerblue;
   border-radius: 15px 75px;
@@ -38,6 +39,9 @@ body {
 }
 .button:hover {
   cursor: pointer;
+}
+.button {
+  font-family: 'Goldman', 'Courier New', Courier, monospace;
 }
 
 /*
