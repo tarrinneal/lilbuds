@@ -2,7 +2,7 @@
   "name": "lilbuds",
   "version": "1.0.0",
   "description": "lilbuds",
-  "main": "lilbuds.html",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
@@ -13,10 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/tarrinneal/lilbuds.git"
   },
-  "author": "tarrin",
+  "author": "tarrinneal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tarrinneal/lilbuds/issues"
   },
-  "homepage": "https://github.com/tarrinneal/lilbuds#readme"
+  "homepage": "https://github.com/tarrinneal/lilbuds#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
