@@ -30,10 +30,7 @@ $(document).ready(function() {
   var defender;
 
   var handleStartButtonClick = function(event) {
-    console.log(event)
-    //clears the stage, allowing for a new scene to be put in place.
     $app.html('');
-    //run bud selection element builder?
     renderBudSelectScreen();
   }
 
@@ -137,6 +134,13 @@ $(document).ready(function() {
     if (attacks[move].heal !== 0) {
       result += ' and healed ' + attacks[move].heal + ' hp'
     }
+    if (attacks[move].enemyAttackMod !== 0) {
+      if (attacks[move].enemyAttackMod > 0) {
+        result += ' and increased their enemies attack power by ' + attacks[move].enemyAttackMod + '!';
+      } else {
+        result += ' and lowered their enemies attack power by ' + -attacks[move].enemyAttackMod + '!';
+      }
+    }
     //add the rest of the things  the moves can do
     return result + '!'
   }
@@ -180,6 +184,9 @@ $(document).ready(function() {
       damageReciever.currentHp = 0;
     } else {
       damageReciever.currentHp -= totalDamage;
+    }
+    if (attacks[attack].enemyAttackMod) {
+      damageReciever.baseAtk += attacks[attack].enemyAttackMod;
     }
     // impliment other types of attacks, status changes etc
   }
