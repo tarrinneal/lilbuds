@@ -129,7 +129,7 @@ $(document).ready(function() {
   var attackDid = function (move, damageDoer, damageReciever) {
     var result = ''
     if (attacks[move].damage !== 0) {
-      result += ' and did ' + damageCalc(move, damageDoer, damageReciever) + ' damage'
+      result += ' which did ' + damageCalc(move, damageDoer, damageReciever) + ' damage'
     }
     if (attacks[move].heal !== 0) {
       result += ' and healed ' + attacks[move].heal + ' hp'
@@ -156,7 +156,7 @@ $(document).ready(function() {
     startFight(attacker, defender);
     var $moveListBox = $('.move-list-box');
     $moveListBox.html('');
-    $continueFightButton = $('<button class="moved-button button">Enemy ' + defender.name + ' used ' + attacks[randomMove].name + ' and ' + attackDid(randomMove, defender, attacker) + '</button>')
+    $continueFightButton = $('<button class="moved-button button">Enemy ' + defender.name + ' used ' + attacks[randomMove].name + attackDid(randomMove, defender, attacker) + '</button>')
     $continueFightButton.appendTo($moveListBox);
 
     $continueFightButton.on('click', continueFight)
@@ -187,6 +187,9 @@ $(document).ready(function() {
     }
     if (attacks[attack].enemyAttackMod) {
       damageReciever.baseAtk += attacks[attack].enemyAttackMod;
+      if (damageReciever.baseAtk < Math.floor(budStorage[damageReciever.key].baseAtk / 2)) {
+        damageReciever.baseAtk = Math.floor(budStorage[damageReciever.key].baseAtk / 2);
+      }
     }
     // impliment other types of attacks, status changes etc
   }
