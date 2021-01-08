@@ -66,7 +66,7 @@ $(document).ready(function() {
     $budPic.attr("src", bud.pic);
 
     var $budName = $('<div class="bud-name"></div>');
-    $budName.text("Name: " + bud.name);
+    $budName.text(bud.name);
 
     var $budHealth = $('<div class="bud-health"></div>');
     $budHealth.text("HP: " + bud.currentHp + "/" + bud.maxHp);

@@ -113,12 +113,15 @@ body {
 }
 .bud-name {
   grid-row: 2;
+  margin-left: 7px;
 }
 .bud-health {
   grid-row: 3;
+  margin-left: 7px;
 }
 .bud-type {
   grid-row: 4;
+  margin-left: 7px;
 }
 #evil-bud .bud-pic {
   transform: scaleX(-1);
