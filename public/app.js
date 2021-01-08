@@ -37,10 +37,12 @@ $(document).ready(function() {
   var renderBudSelectScreen = function () {
     var $budSelectScreen = $('<section class="bud-select-screen"></section>');
     var $chooseBudTitle = $('<p class="choose-bud-title">Choose your Bud!</p>');
+    var $chooseWindowBox = $('<div class="choose-window-box"></div>');
     var $chooseWindow = $('<div class="choose-window"></div>');
 
     $chooseBudTitle.appendTo($budSelectScreen);
-    $chooseWindow.appendTo($budSelectScreen);
+    $chooseWindowBox.appendTo($budSelectScreen)
+    $chooseWindow.appendTo($chooseWindowBox);
 
     buds.forEach(bud => {
       $budWindow = makeBudCard(budStorage[bud])

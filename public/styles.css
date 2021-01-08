@@ -1,5 +1,5 @@
 html, body, #app {
-  height: 100%;
+  height: 90%;
   width: 100%;
 }
 body {
@@ -11,6 +11,7 @@ body {
   height:700px;
   width: 1000px;
   background-color: rgba(0, 0, 0,0);
+  overflow: hidden;
 }
 
 .bud-pic {
@@ -74,6 +75,14 @@ body {
 /*
 ---------------Buds window----------------
 */
+.choose-bud-title {
+  text-align: center;
+  font-size: 42px;
+}
+.choose-window-box {
+  height: 580px;
+  overflow: scroll;
+}
 .choose-window {
   display: grid;
   grid-template-columns: repeat(5, 20%);
