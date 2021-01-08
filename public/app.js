@@ -64,7 +64,6 @@ $(document).ready(function() {
 
     var $budPic = $('<img class="bud-pic">');
     $budPic.attr("src", bud.pic);
-    // $budPic.on('click' , /*run something here*/);
 
     var $budName = $('<div class="bud-name"></div>');
     $budName.text("Name: " + bud.name);
@@ -75,7 +74,6 @@ $(document).ready(function() {
     var $budType = $('<div class="bud-type"></div>');
     $budType.text("Type: " + bud.type);
 
-    // $budWindow.appendTo($chooseWindow);
     $budPic.appendTo($budWindow);
     $budName.appendTo($budWindow);
     $budHealth.appendTo($budWindow);
