@@ -3,7 +3,6 @@ html, body, #app {
 body {
   background-color: rgb(69, 69, 69);
   font-family: 'Goldman', 'Courier New', Courier, monospace;
-  display: flexbox;
 }
 #app {
   border: white dotted;
@@ -163,6 +162,82 @@ body {
 .move-list-box {
   grid-column: 1 / span 3;
   grid-row: 2;
+}
+
+/*
+---------------attack animations----------------
+*/
+.bud-pic.on-attack {
+  position: relative;
+  animation-name: attack;
+  animation-duration: .75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+@keyframes attack {
+  0% {left: 0px;}
+  70% {left: 500px; z-index: 100;}
+  100% {left: 0px; z-index: initial;}
+}
+
+.bud-pic.on-heal {
+  position: relative;
+  animation-name: heal;
+  animation-duration: 0.25s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+}
+
+@keyframes heal {
+  0% {height: 275px; width: 275px;}
+  25% {height: 290px; width: 290px;}
+  50% {height: initial; width: initial;}
+  75% {height: 290px; width: 290px;}
+  100% {height: 275px; width: 275px;}
+}
+
+/* .bud-pic.on-enemy-attack-mod {
+  position: relative;
+  animation-name: enemy-attack-mod;
+  animation-duration: 0.75s;
+  animation-iteration-count: 4;
+}
+
+@keyframes enemy-attack-mod {
+  0% {left: 0px;}
+  70% {left: 500px; z-index: 100; height: 200px; width: 200px;}
+  100% {left: 0px; z-index: initial; height: 275px; width: 275px;}
+} */
+
+.bud-pic.on-attack-back {
+  position: relative;
+  animation-name: attack-back;
+  animation-duration: .75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+@keyframes attack-back {
+  0% {right: 0px;}
+  70% {right: 500px; z-index: 100;}
+  100% {right: 0px; z-index: initial;}
+}
+
+.bud-pic.on-heal {
+  position: relative;
+  animation-name: heal;
+  animation-duration: 0.25s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+}
+
+@keyframes heal {
+  0% {height: 275px; width: 275px; right: 0;}
+  25% {height: 290px; width: 290px; right: 7px;}
+  50% {height: initial; width: initial;right: 12px}
+  75% {height: 290px; width: 290px; right: 7px;}
+  100% {height: 275px; width: 275px; right: 0;}
 }
 
 /*

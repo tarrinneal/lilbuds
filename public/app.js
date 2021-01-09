@@ -121,6 +121,11 @@ $(document).ready(function() {
     $moveListBox.html('');
     $movedButton = $('<button class="moved-button button">' + attacker.name + ' used ' + attacks[move].name + attackDid(move, attacker, defender) + '</button>')
     $movedButton.appendTo($moveListBox);
+    if (attacks[move].movement === 'forward') {
+      $('#' + attacker.key + ' .bud-pic').attr('class', 'bud-pic on-attack');
+    } else if (attacks[move].movement === 'in-place') {
+      $('#' + attacker.key + ' .bud-pic').attr('class', 'bud-pic on-heal');
+    }
 
     $movedButton.on('click', movedButtonHandler)
   }
@@ -135,9 +140,9 @@ $(document).ready(function() {
     }
     if (attacks[move].enemyAttackMod !== 0) {
       if (attacks[move].enemyAttackMod > 0) {
-        result += ' and increased their enemies attack power by ' + attacks[move].enemyAttackMod + '!';
+        result += ' and increased their enemies attack power by ' + attacks[move].enemyAttackMod;
       } else {
-        result += ' and lowered their enemies attack power by ' + -attacks[move].enemyAttackMod + '!';
+        result += ' and lowered their enemies attack power by ' + -attacks[move].enemyAttackMod;
       }
     }
     //add the rest of the things  the moves can do
@@ -157,6 +162,11 @@ $(document).ready(function() {
     $moveListBox.html('');
     $continueFightButton = $('<button class="moved-button button">Enemy ' + defender.name + ' used ' + attacks[randomMove].name + attackDid(randomMove, defender, attacker) + '</button>')
     $continueFightButton.appendTo($moveListBox);
+    if (attacks[randomMove].movement === 'forward') {
+      $('#evil-bud .bud-pic').attr('class', 'bud-pic on-attack-back');
+    } else if (attacks[randomMove].movement === 'in-place') {
+      $('#evil-bud .bud-pic').attr('class', 'bud-pic on-heal');
+    }
 
     $continueFightButton.on('click', continueFight)
   }

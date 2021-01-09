@@ -658,6 +658,7 @@ let attacks = {
   glare: {
     name: 'Glare',
     type: 'spooky',
+    movement: 'in-place',
     damage: 0,
     heal: 0,
     enemyAttackMod: -2,
@@ -666,6 +667,7 @@ let attacks = {
   monch: {
     name: 'Monch',
     type: 'spooky',
+    movement: 'forward',
     damage: 6,
     heal: 0,
     enemyAttackMod: 0,
@@ -674,6 +676,7 @@ let attacks = {
   tailsmack: {
     name: 'Tail Smack',
     type: 'rock',
+    movement: 'forward',
     damage: 4,
     heal: 0,
     enemyAttackMod: -1,
@@ -682,6 +685,7 @@ let attacks = {
   bask: {
     name: 'Bask',
     type: 'rock',
+    movement: 'in-place',
     damage: 0,
     heal: 6,
     enemyAttackMod: 0,
@@ -690,6 +694,7 @@ let attacks = {
   chomp: {
     name: 'Chomp',
     type: 'spooky',
+    movement: 'forward',
     damage: 5,
     heal: 2,
     enemyAttackMod: 0,
@@ -698,6 +703,7 @@ let attacks = {
   scratch: {
     name: 'Scratch',
     type: 'spooky',
+    movement: 'forward',
     damage: 7,
     heal: 0,
     enemyAttackMod: 0,
@@ -706,6 +712,7 @@ let attacks = {
   nap: {
     name: 'Nap',
     type: 'sleepy',
+    movement: 'in-place',
     damage: 0,
     heal: 5,
     enemyAttackMod: 0,
@@ -714,6 +721,7 @@ let attacks = {
   slammywammy: {
     name: 'Slammy Wammy',
     type: 'fighting',
+    movement: 'forward',
     damage: 5,
     heal: 0,
     enemyAttackMod: -1,
