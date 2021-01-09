@@ -19,9 +19,7 @@ $(document).ready(function() {
 
     $homeScreenHousing.appendTo($app);
     $battleStartButton.appendTo($homeScreenHousing);
-    if (last) {
-      $lastDiv.appendTo($homeScreenHousing);
-    }
+
     $battleStartButton.on('click', handleStartButtonClick);
   }
 
@@ -52,9 +50,10 @@ $(document).ready(function() {
       $budWindow.appendTo($chooseWindow);
 
       $budWindow.on('click', handleLilBudClick);
+      $budSelectScreen.appendTo($app);
     })
 
-    $budSelectScreen.appendTo($app);
+    // $budSelectScreen.appendTo($app);
   }
 
   var handleLilBudClick = function (event) {
