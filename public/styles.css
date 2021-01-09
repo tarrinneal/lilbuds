@@ -1,9 +1,7 @@
 html, body, #app {
-  /* height: 90%; */
-  /* width: 90%; */
 }
 body {
-  background-color: #6545B2;
+  background-color: rgb(69, 69, 69);
   font-family: 'Goldman', 'Courier New', Courier, monospace;
   display: flexbox;
 }
@@ -11,10 +9,9 @@ body {
   border: white dotted;
   height:700px;
   width: 1000px;
-  background-color: rgba(0, 0, 0,0);
   overflow: hidden;
   margin: 0 auto;
-
+  background-color: #6545B2;
 }
 
 /*
@@ -46,7 +43,7 @@ body {
   font-weight: bold;
   background-color: #538fbe;
   padding: 20px 70px;
-  font-size: 52px;
+  font-size: 52px !important;
   border: 1px solid #2d6898;
   background-image: linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
   background-image: -o-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
@@ -74,6 +71,7 @@ body {
 }
 .button {
   font-family: 'Goldman', 'Courier New', Courier, monospace;
+  font-size: larger;
 }
 
 /*
