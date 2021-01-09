@@ -13,13 +13,12 @@ $(document).ready(function() {
     var $homeScreenHousing = $('<div class="home-screen-housing"></div>');
     var $battleStartButton = $('<button class="button battle-start-button">' + state + '</button>');
     var $lastDiv = $('<div class="last-game-state">' + last + '</div>');
-    buds.forEach(bud => {
-      $budWindow = makeBudCard(budStorage[bud]);
-    });
 
     $homeScreenHousing.appendTo($app);
     $battleStartButton.appendTo($homeScreenHousing);
-
+    if (last) {
+      $lastDiv.appendTo($homeScreenHousing);
+    }
     $battleStartButton.on('click', handleStartButtonClick);
   }
 
@@ -52,8 +51,6 @@ $(document).ready(function() {
       $budWindow.on('click', handleLilBudClick);
       $budSelectScreen.appendTo($app);
     })
-
-    // $budSelectScreen.appendTo($app);
   }
 
   var handleLilBudClick = function (event) {
