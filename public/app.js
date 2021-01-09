@@ -125,6 +125,8 @@ $(document).ready(function() {
       $('#' + attacker.key + ' .bud-pic').attr('class', 'bud-pic on-attack');
     } else if (attacks[move].movement === 'in-place') {
       $('#' + attacker.key + ' .bud-pic').attr('class', 'bud-pic on-heal');
+    } else if (attacks[move].movement === 'upward') {
+      $('#' + attacker.key + ' .bud-pic').attr('class', 'bud-pic upward');
     }
 
     $movedButton.on('click', movedButtonHandler)
@@ -138,14 +140,24 @@ $(document).ready(function() {
     if (attacks[move].heal !== 0) {
       result += ' and healed ' + attacks[move].heal + ' hp'
     }
-    if (attacks[move].enemyAttackMod !== 0) {
-      if (attacks[move].enemyAttackMod > 0) {
-        result += ' and increased their enemies attack power by ' + attacks[move].enemyAttackMod;
-      } else {
-        result += ' and lowered their enemies attack power by ' + -attacks[move].enemyAttackMod;
-      }
+    if (attacks[move].attackMod !== 0) {
+      result += ' and increased their attack power by ' + attacks[move].attackMod
     }
-    //add the rest of the things  the moves can do
+    if (attacks[move].defenseMod !== 0) {
+      result += ' and increased their defense by ' + attacks[move].defenseMod
+    }
+    if (attacks[move].evadeMod !== 0) {
+      result += ' and increased their evade ability by ' + attacks[move].evadeMod
+    }
+    if (attacks[move].enemyAttackMod !== 0) {
+      result += ' and lowered their enemies attack power by ' + -attacks[move].enemyAttackMod;
+    }
+    if (attacks[move].enemyDefenseMod !== 0) {
+      result += ' and lowered their enemies defense by ' + -attacks[move].enemyDefenseMod;
+    }
+    if (attacks[move].enemyEvadeMod !== 0) {
+      result += ' and lowered their enemies evade ability by ' + -attacks[move].enemyEvadeMod;
+    }
     return result + '!'
   }
 
@@ -166,6 +178,8 @@ $(document).ready(function() {
       $('#evil-bud .bud-pic').attr('class', 'bud-pic on-attack-back');
     } else if (attacks[randomMove].movement === 'in-place') {
       $('#evil-bud .bud-pic').attr('class', 'bud-pic on-heal');
+    } else if (attacks[randomMove].movement === 'upward') {
+      $('#evil-bud .bud-pic').attr('class', 'bud-pic upward-back');
     }
 
     $continueFightButton.on('click', continueFight)
@@ -194,13 +208,42 @@ $(document).ready(function() {
     } else {
       damageReciever.currentHp -= totalDamage;
     }
+    if (attacks[attack].attackMod) {
+      damageDoer.baseAtk += attacks[attack].attackMod;
+      if (damageDoer.baseAtk > Math.floor(budStorage[damageDoer.key].baseAtk * 1.5)) {
+        damageDoer.baseAtk = Math.floor(budStorage[damageDoer.key].baseAtk * 1.5);
+      }
+    }
+    if (attacks[attack].defenseMod) {
+      damageDoer.defense += attacks[attack].defenseMod;
+      if (damageDoer.defense > Math.floor(budStorage[damageDoer.key].defense * 1.5)) {
+        damageDoer.defense = Math.floor(budStorage[damageDoer.key].defense * 1.5);
+      }
+    }
+    if (attacks[attack].evadeMod) {
+      damageDoer.evade += attacks[attack].evadeMod;
+      if (damageDoer.evade > Math.floor(budStorage[damageDoer.key].evade * 1.5)) {
+        damageDoer.evade = Math.floor(budStorage[damageDoer.key].evade * 1.5);
+      }
+    }
     if (attacks[attack].enemyAttackMod) {
       damageReciever.baseAtk += attacks[attack].enemyAttackMod;
       if (damageReciever.baseAtk < Math.floor(budStorage[damageReciever.key].baseAtk / 2)) {
         damageReciever.baseAtk = Math.floor(budStorage[damageReciever.key].baseAtk / 2);
       }
     }
-    // impliment other types of attacks, status changes etc
+    if (attacks[attack].enemyDefenseMod) {
+      damageReciever.defense += attacks[attack].enemyDefenseMod;
+      if (damageReciever.defense < Math.floor(budStorage[damageReciever.key].defense / 2)) {
+        damageReciever.defense = Math.floor(budStorage[damageReciever.key].defense / 2);
+      }
+    }
+    if (attacks[attack].enemyEvadeMod) {
+      damageReciever.evade += attacks[attack].enemyevadeMod;
+      if (damageReciever.evade < Math.floor(budStorage[damageReciever.key].evade / 2)) {
+        damageReciever.evade = Math.floor(budStorage[damageReciever.key].evade / 2);
+      }
+    }
   }
 
   var damageCalc = function (attack, damageDoer, damageReciever) {

@@ -489,13 +489,69 @@ let attacks = {
     enemyAttackMod: 0,
     description: '',
   },
+  fuzzball: {
+    name: 'Fuzz Ball',
+    type: 'adorable',
+    movement: 'in-place',
+    damage: 0,
+    heal: 0,
+    attackMod: 0,
+    defenseMod: 0,
+    evadeMod: 1,
+    enemyDefenseMod: 0,
+    enemyEvadeMod: 0,
+    enemyAttackMod: 2,
+    description: '',
+  },
+  yip: {
+    name: 'Yip',
+    type: 'cute',
+    movement: 'in-place',
+    damage: 0,
+    heal: 0,
+    attackMod: 1,
+    defenseMod: 0,
+    evadeMod: 0,
+    enemyDefenseMod: -2,
+    enemyEvadeMod: 0,
+    enemyAttackMod: 0,
+    description: '',
+  },
+  heartofthewarrior: {
+    name: 'Heart of the Warrior',
+    type: 'warrior',
+    movement: 'in-place',
+    damage: 0,
+    heal: 2,
+    attackMod: 1,
+    defenseMod: 1,
+    evadeMod: 1,
+    enemyDefenseMod: 0,
+    enemyEvadeMod: 0,
+    enemyAttackMod: 0,
+    description: '',
+  },
+  headbutt: {
+    name: 'Headbutt',
+    type: 'smashing',
+    movement: 'forward',
+    damage: 6,
+    heal: 0,
+    attackMod: 0,
+    defenseMod: 0,
+    evadeMod: 0,
+    enemyDefenseMod: -1,
+    enemyEvadeMod: 0,
+    enemyAttackMod: 0,
+    description: '',
+  },
 };
 
 var dogMoves = ['nap', 'scratch', 'chomp', 'bark'];
 var catMoves = ['glare', 'nap', 'monch', 'scratch', 'bask', 'purr', 'knockover'];
 var birdMoves = ['fly', 'wingbash', 'peck', 'poop', 'squack'];
 var horseMoves = ['kick', 'chomp', 'gallop'];
-var goatMoves = ['kick', 'chomp'];
+var goatMoves = ['kick', 'chomp', 'headbutt'];
 var beardyMoves = ['glare', 'monch',  'bask'];
 var ferretMoves = ['nibble'];
 var hamMoves = ['nibble'];
@@ -504,14 +560,15 @@ var duoMoves = ['doubleteam'];
 var largeMoves = ['slammywammy', 'smoosh', 'stomp'];
 var smallMoves = ['hide'];
 var oldMoves = ['respect'];
-var puppyMoves = ['zoomies'];
+var puppyMoves = ['zoomies', 'yip'];
 var highEnergyMoves = ['zoomies', 'evade'];
 var tailMoves = ['tailsmack'];
 var robotMoves = ['missleattack', 'fly'];
 var jediMoves = ['forcethrow', 'forcechoke', 'mindchange', 'forcelightning'];
 var tyMoves = ['collect'];
-var cuteMoves = ['lookcute'];
+var cuteMoves = ['lookcute', 'fuzzball'];
 var flowerMoves = ['photosynthesis']
+var warriorAttacks = ['heartofthewarrior']
 
 let budStorage = {
   gandalf: {
@@ -640,7 +697,7 @@ let budStorage = {
     baseAtk: 20,
     def: 20,
     evade: 10,
-    moves: ['nap', 'scratch', 'chomp', 'rebuild'],
+    moves: ['underfoot', 'scratch', 'chomp', 'rebuild'],
     description: '5-Star Dog!',
     pic: 'assets/denis_optimized.png'
   },

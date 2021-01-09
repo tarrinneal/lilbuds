@@ -197,6 +197,23 @@ body {
   100% {height: 275px; width: 275px;}
 }
 
+.bud-pic.upward {
+  position: relative;
+  animation-name: upward;
+  animation-duration: .75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+@keyframes upward {
+  0% {left: 0px;}
+  12% {left: 125px; bottom: 75px;}
+  25% {left: 250px; bottom: 150px;}
+  37% {left: 375px; bottom: 75px;}
+  50% {left: 500px; z-index: 100;}
+  100% {left: 0px; z-index: initial;}
+}
+
 /* .bud-pic.on-enemy-attack-mod {
   position: relative;
   animation-name: enemy-attack-mod;
@@ -240,6 +257,22 @@ body {
   100% {height: 275px; width: 275px; right: 0;}
 }
 
+.bud-pic.upward-back {
+  position: relative;
+  animation-name: upward-back;
+  animation-duration: .75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+@keyframes upward-back {
+  0% {right: 0px;}
+  12% {right: 125px; bottom: 75px;}
+  25% {right: 250px; bottom: 150px;}
+  37% {right: 375px; bottom: 75px;}
+  50% {right: 500px; z-index: 100;}
+  100% {right: 0px; z-index: initial;}
+}
 /*
 ---------------After game----------------
 */
