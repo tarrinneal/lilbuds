@@ -13,6 +13,9 @@ $(document).ready(function() {
     var $homeScreenHousing = $('<div class="home-screen-housing"></div>');
     var $battleStartButton = $('<button class="button battle-start-button">' + state + '</button>');
     var $lastDiv = $('<div class="last-game-state">' + last + '</div>');
+    buds.forEach(bud => {
+      $budWindow = makeBudCard(budStorage[bud]);
+    });
 
     $homeScreenHousing.appendTo($app);
     $battleStartButton.appendTo($homeScreenHousing);
