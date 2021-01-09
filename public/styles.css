@@ -21,8 +21,11 @@ body {
   font-size: 69px;
   width: fit-content;
   margin: 0 auto;
-  color: white;
   font-weight: bold;
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 /*
 ---------------Buttons----------------
