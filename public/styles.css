@@ -5,19 +5,28 @@ html, body, #app {
 body {
   background-color: #6545B2;
   font-family: 'Goldman', 'Courier New', Courier, monospace;
+  display: flexbox;
 }
 #app {
-  border: black dotted;
+  border: white dotted;
   height:700px;
   width: 1000px;
   background-color: rgba(0, 0, 0,0);
   overflow: hidden;
+  margin: 0 auto;
+
 }
 
-.bud-pic {
-  width: 10%;
+/*
+---------------logo----------------
+*/
+#logo {
+  font-size: 69px;
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+  font-weight: bold;
 }
-
 /*
 ---------------Buttons----------------
 */
@@ -31,11 +40,6 @@ body {
 .battle-start-button {
   grid-column: 2;
   grid-row: 2;
-  /* font-size: 69px;
-  text-transform: uppercase;
-  background-color: cornflowerblue;
-  border-radius: 15px 75px;
-  box-shadow: 25px 15px black;*/
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -78,9 +82,11 @@ body {
 .choose-bud-title {
   text-align: center;
   font-size: 42px;
+  margin: 0;
+  color: white;
 }
 .choose-window-box {
-  height: 565px;
+  height: 655px;
   overflow: hidden scroll;
 }
 .choose-window {
