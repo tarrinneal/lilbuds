@@ -11,7 +11,7 @@ let budStorage = {
     evade: 5,
     moves: ['glare', 'monch', 'tailsmack', 'bask'],
     description: 'Gandalf is a magical bearded dragon who\'s small size is made up for with his powerful monch',
-    pic: 'assets/Ganta.png'
+    pic: 'assets/ganta_optimized.png'
   },
   sam: {
     key: 'sam',
@@ -24,7 +24,7 @@ let budStorage = {
     evade: 9,
     moves: ['chomp', 'scratch', 'nap', 'slammywammy'],
     description: 'Sam is big ol cuddly bear-dog with a heart as big as his head',
-    pic: 'assets/sam.png'
+    pic: 'assets/sam_optimized.png'
   },
   bebeAndBailey: {
     key: 'bebeAndBailey',
@@ -37,7 +37,7 @@ let budStorage = {
     evade: 7,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Siblings in battle, the fur-ocious pups will give any contender a run for their money',
-    pic: 'assets/Bebe and Bailey.png'
+    pic: 'assets/bebe-and-bailey_optimized.png'
   },
   beckham: {
     key: 'beckham',
@@ -50,7 +50,7 @@ let budStorage = {
     evade: 5,
     moves: ['chomp', 'monch', 'bask', 'slammywammy'],
     description: 'One horse that will do anything in the name of revenge',
-    pic: 'assets/Beckham.png'
+    pic: 'assets/beckham_optimized.png'
   },
   bubble: {
     key: 'bubble',
@@ -63,7 +63,7 @@ let budStorage = {
     evade: 7,
     moves: ['glare', 'monch', 'scratch', 'nap'],
     description: 'Don\'t let that blanket fool you, underneath is cold-budded KOer',
-    pic: 'assets/Bubble.png'
+    pic: 'assets/bubble_optimized.png'
   },
   bunnahabhain: {
     key: 'bunnahabhain',
@@ -76,7 +76,7 @@ let budStorage = {
     evade: 7,
     moves: ['chomp', 'monch', 'scratch', 'nap'],
     description: 'Legend says, Bunna is so fast, no one has been able to take a good picture of him',
-    pic: 'assets/Bunnahabhain.png'
+    pic: 'assets/bunnahabhain_optimized.png'
   },
   caruso: {
     key: 'caruso',
@@ -89,7 +89,7 @@ let budStorage = {
     evade: 7,
     moves: ['chomp', 'monch', 'scratch', 'nap'],
     description: 'Equipped with adventure harness and ready to take on some buds!',
-    pic: 'assets/Caruso.png'
+    pic: 'assets/caruso_optimized.png'
   },
   cashew: {
     key: 'cashew',
@@ -102,7 +102,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'nap'],
     description: 'Cashew will mess you up',
-    pic: 'assets/Cashew.png'
+    pic: 'assets/cashew_optimized.png'
   },
   casper: {
     key: 'casper',
@@ -115,7 +115,7 @@ let budStorage = {
     evade: 10,
     moves: ['glare', 'scratch', 'nap', 'bask'],
     description: 'Good luck getting any coding done with Casper around',
-    pic: 'assets/Casper.png'
+    pic: 'assets/casper_optimized.png'
   },
   denis: {
     key: 'denis',
@@ -128,7 +128,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '5-Star Dog!',
-    pic: 'assets/Denis.png'
+    pic: 'assets/denis_optimized.png'
   },
   goat: {
     key: 'goat',
@@ -141,7 +141,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'glare'],
     description: 'This is GOAT',
-    pic: 'assets/GOAT.png'
+    pic: 'assets/goat_optimized.png'
   },
   izzy: {
     key: 'izzy',
@@ -154,7 +154,7 @@ let budStorage = {
     evade: 8,
     moves: ['glare', 'chomp', 'scratch', 'bask'],
     description: 'Izzy typcially is seen basking on a pillows in the sunlight, try hard not to awaken her though...',
-    pic: 'assets/Izzy.png'
+    pic: 'assets/izzy_optimized.png'
   },
   jasmine: {
     key: 'jasmine',
@@ -167,7 +167,7 @@ let budStorage = {
     evade: 11,
     moves: ['glare', 'chomp', 'scratch', 'bask'],
     description: 'Jasmine is known to have unique ties with the full moon on Friday the 13th',
-    pic: 'assets/Jasmine.png'
+    pic: 'assets/jasmine_optimized.png'
   },
   kai: {
     key: 'kai',
@@ -180,7 +180,7 @@ let budStorage = {
     evade: 12,
     moves: ['glare', 'monch', 'scratch', 'bask'],
     description: 'Kai likes to mimic it\'s owners language, watch what you say!',
-    pic: 'assets/Kai.png'
+    pic: 'assets/kai_optimized.png'
   },
   kevin: {
     key: 'kevin',
@@ -193,7 +193,7 @@ let budStorage = {
     evade: 10,
     moves: ['glare', 'monch', 'scratch', 'nap'],
     description: 'Kevin, the girl cat',
-    pic: 'assets/Kevin the female cat.png'
+    pic: 'assets/kevin-the-female-cat_optimized.png'
   },
   ladyLechuga: {
     key: 'ladyLechuga',
@@ -206,7 +206,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'tailsmack', 'slammywammy'],
     description: 'Lady Lechuga of the Lechuga clan',
-    pic: 'assets/Lady Lechuga.png'
+    pic: 'assets/lady-lechuga_optimized.png'
   },
   leoAndLola: {
     key: 'leoAndLola',
@@ -219,7 +219,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Leo and Lola.png'
+    pic: 'assets/leo-and-lola_optimized.png'
   },
   lita: {
     key: 'lita',
@@ -232,7 +232,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Lita.png'
+    pic: 'assets/lita_optimized.png'
   },
   maiq: {
     key: 'maiq',
@@ -245,7 +245,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/M\'aiq.png'
+    pic: 'assets/m\'aiq_optimized.png'
   },
   mackkenzie: {
     key: 'mackkenzie',
@@ -258,7 +258,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/MackKenzie.png'
+    pic: 'assets/mackkenzie_optimized.png'
   },
   maple: {
     key: 'maple',
@@ -271,7 +271,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Maple the Ham.png'
+    pic: 'assets/maple-the-ham_optimized.png'
   },
   miko: {
     key: 'miko',
@@ -284,7 +284,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Miko.png'
+    pic: 'assets/miko_optimized.png'
   },
   owliver: {
     key: 'owliver',
@@ -297,7 +297,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Owliver.png'
+    pic: 'assets/owliver_optimized.png'
   },
   panAndTrilly: {
     key: 'panAndTrilly',
@@ -310,7 +310,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Pan and Trilly.png'
+    pic: 'assets/pan-and-trilly_optimized.png'
   },
   pepper: {
     key: 'pepper',
@@ -323,7 +323,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Pepper.png'
+    pic: 'assets/pepper_optimized.png'
   },
   puddin: {
     key: 'puddin',
@@ -336,7 +336,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Puddin.png'
+    pic: 'assets/puddin_optimized.png'
   },
   stellaAndBella: {
     key: 'stellaAndBella',
@@ -349,7 +349,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Stella and Bella.png'
+    pic: 'assets/stella-and-bella_optimized.png'
   },
   tank: {
     key: 'tank',
@@ -362,7 +362,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Tank.png'
+    pic: 'assets/tank_optimized.png'
   },
   ted: {
     key: 'ted',
@@ -375,7 +375,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Ted.png'
+    pic: 'assets/ted_optimized.png'
   },
   tilly: {
     key: 'tilly',
@@ -388,7 +388,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Tilly.png'
+    pic: 'assets/tilly_optimized.png'
   },
   turbo: {
     key: 'turbo',
@@ -401,7 +401,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Turbo.png'
+    pic: 'assets/turbo_optimized.png'
   },
   tuxie: {
     key: 'tuxie',
@@ -414,7 +414,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Tuxie the Tailess.png'
+    pic: 'assets/tuxie-the-tailess_optimized.png'
   },
   vasco: {
     key: 'vasco',
@@ -427,7 +427,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Vasco.png'
+    pic: 'assets/vasco_optimized.png'
   },
   valkyrie: {
     key: 'valkyrie',
@@ -440,7 +440,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: '',
-    pic: 'assets/Vlakyrie.png'
+    pic: 'assets/vlakyrie_optimized.png'
   },
   suki: {
     key: 'suki',
@@ -453,7 +453,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Suki may not look it, but she is actually a powerful warrior!',
-    pic: 'assets/Antons Menchaca dog.png'
+    pic: 'assets/antons menchaca dog.png'
   },
   tucker: {
     key: 'tucker',
@@ -466,7 +466,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Academik Dog',
-    pic: 'assets/Academiks dog.png'
+    pic: 'assets/academiks dog.png'
   },
   cpDog: {
     key: 'cpDog',
@@ -479,7 +479,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Chloe Palmers Dog',
-    pic: 'assets/Chloe Palmers dog.png'
+    pic: 'assets/chloe-palmers-dog_optimized.png'
   },
   halo: {
     key: 'halo',
@@ -492,7 +492,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Halo is an innocent little angel, until she doesn\'t get what she wants!',
-    pic: 'assets/Ciaddie Rutelionis dog.png'
+    pic: 'assets/chloe-palmers-dog_optimized.png'
   },
   dmDog: {
     key: 'dmDog',
@@ -505,7 +505,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Daryll Mamarils Dog',
-    pic: 'assets/Daryll Mamarils dog.png'
+    pic: 'assets/daryll-mamarils-dog_optimized.png'
   },
   enDog: {
     key: 'enDog',
@@ -518,7 +518,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Evan Nouis Dog',
-    pic: 'assets/Evan Nouis dog.png'
+    pic: 'assets/evan-nouis-dog_optimized.png'
   },
   gkDog: {
     key: 'gkDog',
@@ -531,7 +531,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Graham Kirshs Dog',
-    pic: 'assets/Graham Kirshs dog.png'
+    pic: 'assets/graham-kirshs-dog_optimized.png'
   },
   hlDog: {
     key: 'hlDog',
@@ -544,7 +544,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Haoshen Lis Dog',
-    pic: 'assets/Haoshen Lis dog.png'
+    pic: 'assets/haoshen-lis-dog_optimized.png'
   },
   hwDog: {
     key: 'hwDog',
@@ -557,7 +557,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Henry Waltons Dog',
-    pic: 'assets/Henry Waltons geriatric dog.png'
+    pic: 'assets/henry-waltons-geriatric-dog_optimized.png'
   },
   rkDog: {
     key: 'rkDog',
@@ -570,7 +570,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Reuben Kirshs Dog',
-    pic: 'assets/Reuben Kirshs dog.png'
+    pic: 'assets/reuben-kirshs-dog_optimized.png'
   },
   rzDog: {
     key: 'rzDog',
@@ -583,7 +583,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Ricky Zhaos Dog',
-    pic: 'assets/Ricky Zhaos dog.png'
+    pic: 'assets/ricky-zhaos-dog_optimized.png'
   },
   piper: {
     key: 'piper',
@@ -596,7 +596,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Everyone at some point will have to pay Piper',
-    pic: 'assets/rob scherers cat.png'
+    pic: 'assets/rob-scherers-cat_optimized.png'
   },
   maddox: {
     key: 'maddox',
@@ -609,7 +609,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Despite his calm demeaner, he can sometimes truly be mad',
-    pic: 'assets/rob scherers dog.png'
+    pic: 'assets/rob-scherers-dog_optimized.png'
   },
   snCat: {
     key: 'snCat',
@@ -622,7 +622,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Sim Neyzis cat',
-    pic: 'assets/Sim Neyzis cat.png'
+    pic: 'assets/sim-neyzis-cat_optimized.png'
   },
   donna: {
     key: 'donna',
@@ -635,7 +635,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Donna is often confused for a tumbleweed of fur',
-    pic: 'assets/Teva Dagais cat.png'
+    pic: 'assets/teva-dagais-cat_optimized.png'
   },
   thDog: {
     key: 'thDog',
@@ -648,7 +648,7 @@ let budStorage = {
     evade: 10,
     moves: ['chomp', 'monch', 'scratch', 'bask'],
     description: 'Tyler Holts Dog',
-    pic: 'assets/Tyler Holts dog.png'
+    pic: 'assets/tyler-holts-dog_optimized.png'
   },
 };
 
