@@ -80,13 +80,13 @@ body {
   font-size: 42px;
 }
 .choose-window-box {
-  height: 580px;
-  overflow: scroll;
+  height: 565px;
+  overflow: hidden scroll;
 }
 .choose-window {
   display: grid;
   grid-template-columns: repeat(5, 20%);
-  grid-template-rows: auto hidden;
+  grid-template-rows: auto;
 }
 /*
 ---------------Buds cards----------------
