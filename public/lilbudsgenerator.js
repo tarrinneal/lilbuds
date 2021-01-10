@@ -350,7 +350,7 @@ let attacks = {
     description: '',
   },
   zoomies: {
-    name: 'Soomies',
+    name: 'Zoomies',
     type: 'speed',
     movement: 'forward',
     damage: 5,
