@@ -500,7 +500,7 @@ let attacks = {
     evadeMod: 1,
     enemyDefenseMod: 0,
     enemyEvadeMod: 0,
-    enemyAttackMod: 2,
+    enemyAttackMod: -2,
     description: '',
   },
   yip: {
