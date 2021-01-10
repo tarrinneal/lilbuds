@@ -207,9 +207,13 @@ body {
 
 @keyframes upward {
   0% {left: 0px;}
-  12% {left: 125px; bottom: 75px;}
-  25% {left: 250px; bottom: 150px;}
-  37% {left: 375px; bottom: 75px;}
+  6% {left: 62.5px; bottom: 40px;}
+  12% {left: 125px; bottom: 80px;}
+  18% {left: 187.5px; bottom: 120px;}
+  25% {left: 250px; bottom: 160px;}
+  32% {left: 312.5px; bottom: 120px;}
+  38% {left: 375px; bottom: 80px;}
+  44% {left: 437.5px; bottom: 40px;}
   50% {left: 500px; z-index: 100;}
   100% {left: 0px; z-index: initial;}
 }
@@ -267,9 +271,13 @@ body {
 
 @keyframes upward-back {
   0% {right: 0px;}
-  12% {right: 125px; bottom: 75px;}
-  25% {right: 250px; bottom: 150px;}
-  37% {right: 375px; bottom: 75px;}
+  6% {right: 62.5px; bottom: 40px;}
+  12% {right: 125px; bottom: 80px;}
+  18% {right: 187.5px; bottom: 120px;}
+  25% {right: 250px; bottom: 160px;}
+  32% {right: 312.5px; bottom: 120px;}
+  38% {right: 375px; bottom: 80px;}
+  44% {right: 437.5px; bottom: 40px;}
   50% {right: 500px; z-index: 100;}
   100% {right: 0px; z-index: initial;}
 }

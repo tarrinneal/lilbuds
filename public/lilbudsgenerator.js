@@ -545,6 +545,20 @@ let attacks = {
     enemyAttackMod: 0,
     description: '',
   },
+  underfoot: {
+    name: 'Underfoot',
+    type: 'ouch',
+    movement: 'forward',
+    damage: 8,
+    heal: 0,
+    attackMod: 0,
+    defenseMod: 0,
+    evadeMod: 0,
+    enemyDefenseMod: 0,
+    enemyEvadeMod: 0,
+    enemyAttackMod: 0,
+    description: '',
+  },
 };
 
 var dogMoves = ['nap', 'scratch', 'chomp', 'bark'];
@@ -1117,9 +1131,9 @@ let budStorage = {
     description: 'Haoshen Lis Dog',
     pic: 'assets/haoshen-lis-dog_optimized.png'
   },
-  hwDog: {
-    key: 'hwDog',
-    name: 'HW Dog',
+  katinka: {
+    key: 'katinka',
+    name: 'Katinka',
     type: 'ground',
     maxHp: 40,
     currentHp: 40,
