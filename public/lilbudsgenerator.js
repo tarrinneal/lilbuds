@@ -588,7 +588,7 @@ let budStorage = {
   gandalf: {
     key: 'gandalf',
     name: 'Gandalf',
-    type: 'rock',
+    type: 'Wizard Lizard',
     maxHp: 35,
     currentHp: 35,
     baseAtk: 15,
@@ -601,7 +601,7 @@ let budStorage = {
   sam: {
     key: 'sam',
     name: 'Sam',
-    type: 'ground',
+    type: 'Friendly',
     maxHp: 45,
     currentHp: 45,
     baseAtk: 18,
@@ -614,7 +614,7 @@ let budStorage = {
   bebeAndBailey: {
     key: 'bebeAndBailey',
     name: 'Bebe & Bailey',
-    type: 'ground',
+    type: 'Doggy Duo',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -627,7 +627,7 @@ let budStorage = {
   beckham: {
     key: 'beckham',
     name: 'Beckham',
-    type: 'big',
+    type: 'Big',
     maxHp: 45,
     currentHp: 45,
     baseAtk: 19,
@@ -640,7 +640,7 @@ let budStorage = {
   bubble: {
     key: 'bubble',
     name: 'Bubble',
-    type: 'jedi',
+    type: 'Jedi Pupper',
     maxHp: 35,
     currentHp: 35,
     baseAtk: 15,
@@ -653,7 +653,7 @@ let budStorage = {
   bunnahabhain: {
     key: 'bunnahabhain',
     name: 'Bunnahabhain',
-    type: 'ground',
+    type: 'Zoomer',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -666,7 +666,7 @@ let budStorage = {
   caruso: {
     key: 'caruso',
     name: 'Caruso',
-    type: 'ground',
+    type: 'Good Pall',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -679,7 +679,7 @@ let budStorage = {
   cashew: {
     key: 'cashew',
     name: 'Cashew',
-    type: 'ground',
+    type: 'Allergy Warning',
     maxHp: 35,
     currentHp: 35,
     baseAtk: 12,
@@ -692,7 +692,7 @@ let budStorage = {
   casper: {
     key: 'casper',
     name: 'Casper',
-    type: 'ground',
+    type: 'Friendly Ghost',
     maxHp: 32,
     currentHp: 32,
     baseAtk: 12,
@@ -705,7 +705,7 @@ let budStorage = {
   denis: {
     key: 'denis',
     name: 'Denis',
-    type: 'rock',
+    type: 'Lego dogo',
     maxHp: 28,
     currentHp: 28,
     baseAtk: 20,
@@ -718,7 +718,7 @@ let budStorage = {
   goat: {
     key: 'goat',
     name: 'GOAT',
-    type: 'rock',
+    type: 'Goat?',
     maxHp: 34,
     currentHp: 34,
     baseAtk: 12,
@@ -731,7 +731,7 @@ let budStorage = {
   izzy: {
     key: 'izzy',
     name: 'Izzy',
-    type: 'ground',
+    type: 'Grump',
     maxHp: 34,
     currentHp: 34,
     baseAtk: 16,
@@ -744,7 +744,7 @@ let budStorage = {
   jasmine: {
     key: 'jasmine',
     name: 'Jasmine',
-    type: 'ground',
+    type: 'Arabian Cat',
     maxHp: 32,
     currentHp: 32,
     baseAtk: 16,
@@ -770,7 +770,7 @@ let budStorage = {
   kevin: {
     key: 'kevin',
     name: 'Kevin',
-    type: 'ground',
+    type: 'Girl Cat',
     maxHp: 35,
     currentHp: 35,
     baseAtk: 15,
@@ -783,7 +783,7 @@ let budStorage = {
   ladyLechuga: {
     key: 'ladyLechuga',
     name: 'Lady Lechuga',
-    type: 'ground',
+    type: 'Triangle Head',
     maxHp: 45,
     currentHp: 45,
     baseAtk: 18,
@@ -796,7 +796,7 @@ let budStorage = {
   leoAndLola: {
     key: 'leoAndLola',
     name: 'Leo & Lola',
-    type: 'ground',
+    type: 'Double Trouble',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -809,7 +809,7 @@ let budStorage = {
   lita: {
     key: 'lita',
     name: 'Lita',
-    type: 'ground',
+    type: 'Flower Power',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -822,7 +822,7 @@ let budStorage = {
   maiq: {
     key: 'maiq',
     name: 'M\'aiq',
-    type: 'ground',
+    type: 'Liar',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -835,7 +835,7 @@ let budStorage = {
   mackkenzie: {
     key: 'mackkenzie',
     name: 'MackKenzie',
-    type: 'ground',
+    type: '-oodle',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -848,7 +848,7 @@ let budStorage = {
   maple: {
     key: 'maple',
     name: 'Maple the Ham',
-    type: 'rock',
+    type: 'Hammy',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -861,7 +861,7 @@ let budStorage = {
   miko: {
     key: 'miko',
     name: 'Miko',
-    type: 'something',
+    type: 'Shrine Maiden',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -874,7 +874,7 @@ let budStorage = {
   owliver: {
     key: 'owliver',
     name: 'Owliver',
-    type: 'flying',
+    type: 'Collectable?',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -887,7 +887,7 @@ let budStorage = {
   panAndTrilly: {
     key: 'panAndTrilly',
     name: 'Pan & Trilly',
-    type: 'ground',
+    type: 'Toil & Trouble',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -900,7 +900,7 @@ let budStorage = {
   pepper: {
     key: 'pepper',
     name: 'Pepper',
-    type: 'ground',
+    type: 'Spicy',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -913,7 +913,7 @@ let budStorage = {
   puddin: {
     key: 'puddin',
     name: 'Puddin',
-    type: 'ground',
+    type: 'Sweet',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -926,7 +926,7 @@ let budStorage = {
   stellaAndBella: {
     key: 'stellaAndBella',
     name: 'Stella & Bella',
-    type: 'rock',
+    type: 'Noodle Rodent',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -939,7 +939,7 @@ let budStorage = {
   tank: {
     key: 'tank',
     name: 'Tank',
-    type: 'rock',
+    type: 'Armored Vehicle',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -952,7 +952,7 @@ let budStorage = {
   ted: {
     key: 'ted',
     name: 'Ted',
-    type: 'ground',
+    type: 'Tennis Pro',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -965,7 +965,7 @@ let budStorage = {
   tilly: {
     key: 'tilly',
     name: 'Tilly',
-    type: 'ground',
+    type: 'Chonk',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -978,7 +978,7 @@ let budStorage = {
   turbo: {
     key: 'turbo',
     name: 'Turbo',
-    type: 'ground',
+    type: 'Speed Demon',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -991,7 +991,7 @@ let budStorage = {
   tuxie: {
     key: 'tuxie',
     name: 'Tuxie the Tailess',
-    type: 'ground',
+    type: 'Classy Cat',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1004,7 +1004,7 @@ let budStorage = {
   vasco: {
     key: 'vasco',
     name: 'Vasco',
-    type: 'ground',
+    type: 'Vasco Girl',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1017,7 +1017,7 @@ let budStorage = {
   valkyrie: {
     key: 'valkyrie',
     name: 'Valkyrie',
-    type: 'rock',
+    type: 'Warrior',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1030,7 +1030,7 @@ let budStorage = {
   suki: {
     key: 'suki',
     name: 'Suki',
-    type: 'ground',
+    type: 'Kyoshi Warrior',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1043,7 +1043,7 @@ let budStorage = {
   tucker: {
     key: 'tucker',
     name: 'Tucker',
-    type: 'ground',
+    type: 'Thinker',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1056,7 +1056,7 @@ let budStorage = {
   cpDog: {
     key: 'cpDog',
     name: 'CP Dog',
-    type: 'ground',
+    type: 'Chillin',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1069,7 +1069,7 @@ let budStorage = {
   halo: {
     key: 'halo',
     name: 'Halo',
-    type: 'ground',
+    type: 'Angelic',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1082,7 +1082,7 @@ let budStorage = {
   dmDog: {
     key: 'dmDog',
     name: 'DM Dog',
-    type: 'ground',
+    type: 'Fluffy',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1095,7 +1095,7 @@ let budStorage = {
   enDog: {
     key: 'enDog',
     name: 'EN Dog',
-    type: 'ground',
+    type: 'Precious',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1108,7 +1108,7 @@ let budStorage = {
   gkDog: {
     key: 'gkDog',
     name: 'GK Dog',
-    type: 'ground',
+    type: 'Mecha Dog',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1121,7 +1121,7 @@ let budStorage = {
   hlDog: {
     key: 'hlDog',
     name: 'HL Dog',
-    type: 'ground',
+    type: 'Corgirific',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1134,7 +1134,7 @@ let budStorage = {
   katinka: {
     key: 'katinka',
     name: 'Katinka',
-    type: 'ground',
+    type: 'Geriatric',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1147,7 +1147,7 @@ let budStorage = {
   rkDog: {
     key: 'rkDog',
     name: 'RK Dog',
-    type: 'ground',
+    type: 'Classic',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1160,7 +1160,7 @@ let budStorage = {
   rzDog: {
     key: 'rzDog',
     name: 'RZ Dog',
-    type: 'ground',
+    type: 'Doge',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1173,7 +1173,7 @@ let budStorage = {
   piper: {
     key: 'piper',
     name: 'Piper',
-    type: 'ground',
+    type: 'Toll Collector',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1186,7 +1186,7 @@ let budStorage = {
   maddox: {
     key: 'maddox',
     name: 'Maddox',
-    type: 'ground',
+    type: 'Soul Stealer',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1199,7 +1199,7 @@ let budStorage = {
   snCat: {
     key: 'snCat',
     name: 'SN Cat',
-    type: 'ground',
+    type: 'Suspicious',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1212,7 +1212,7 @@ let budStorage = {
   donna: {
     key: 'donna',
     name: 'Donna',
-    type: 'ground',
+    type: 'Fluffball',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
@@ -1225,7 +1225,7 @@ let budStorage = {
   thDog: {
     key: 'thDog',
     name: 'TH Dog',
-    type: 'ground',
+    type: 'Police Officer',
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
