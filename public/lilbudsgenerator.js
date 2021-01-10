@@ -943,7 +943,7 @@ let budStorage = {
     maxHp: 40,
     currentHp: 40,
     baseAtk: 15,
-    def: 15,
+    def: 25,
     evade: 10,
     moves: ['glare', 'monch',  'bask', 'smoosh'],
     description: '',
