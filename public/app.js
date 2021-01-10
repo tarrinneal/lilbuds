@@ -201,7 +201,7 @@ $(document).ready(function() {
   }
 
   var attackMaker = function (attack, damageDoer, damageReciever) {
-    if (Math.random() < .1 && attacks[attack].damage > 0){
+    if (((Math.random() * 100) - damageReciever.evade < 5) && attacks[attack].damage > 0){
       return 'miss'
     } else {
       var totalDamage = damageCalc(attack, damageDoer, damageReciever)
