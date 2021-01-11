@@ -27,6 +27,7 @@ $(document).ready(function() {
       } else {
         endSfx = new Audio('assets/sfx/loss.mp3');
       }
+      console.log(endSfx)
       endSfx.play();
       $lastDiv.appendTo($homeScreenHousing);
     }
@@ -105,7 +106,7 @@ $(document).ready(function() {
     $budWindow.appendTo($battleScreen);
     if (!defender) {
 
-      music.play();
+      // music.play();
       defender = {...budStorage[evilBud]};
     }
     var $evilBudWindow = makeBudCard(defender);
