@@ -21,6 +21,7 @@ $(document).ready(function() {
     $homeScreenHousing.appendTo($app);
     $battleStartButton.appendTo($homeScreenHousing);
     if (last) {
+      console.log(last)
       var endSfx;
       if (last === 'YOU WIN!') {
         endSfx = new Audio('assets/sfx/victory.mp3');
