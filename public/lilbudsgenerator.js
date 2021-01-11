@@ -12,6 +12,7 @@ let attacks = {
     enemyEvadeMod: -1,
     enemyAttackMod: -2,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   monch: {
     name: 'Monch',
@@ -26,6 +27,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/monch.mp3'
   },
   tailsmack: {
     name: 'Tail Smack',
@@ -40,6 +42,7 @@ let attacks = {
     enemyEvadeMod: -1,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   bask: {
     name: 'Bask',
@@ -54,6 +57,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   chomp: {
     name: 'Chomp',
@@ -68,6 +72,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   scratch: {
     name: 'Scratch',
@@ -82,6 +87,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   nap: {
     name: 'Nap',
@@ -96,6 +102,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   slammywammy: {
     name: 'Slammy Wammy',
@@ -110,6 +117,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: -1,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   bark: {
     name: 'Bark',
@@ -124,6 +132,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   purr: {
     name: 'Purr',
@@ -138,6 +147,7 @@ let attacks = {
     enemyEvadeMod: -2,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   knockover: {
     name: 'Knock Over',
@@ -152,6 +162,7 @@ let attacks = {
     enemyEvadeMod: -1,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   fly: {
     name: 'Fly',
@@ -166,6 +177,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   wingbash: {
     name: 'Wing Bash',
@@ -180,6 +192,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   peck: {
     name: 'Peck',
@@ -194,6 +207,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   poop: {
     name: 'Poop',
@@ -208,6 +222,7 @@ let attacks = {
     enemyEvadeMod: -1,
     enemyAttackMod: -2,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   squack: {
     name: 'Squack',
@@ -222,6 +237,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   kick: {
     name: 'Kick',
@@ -236,6 +252,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   gallop: {
     name: 'Gallop',
@@ -250,6 +267,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   nibble: {
     name: 'Nibble',
@@ -264,6 +282,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   rebuild: {
     name: 'Rebuild',
@@ -278,6 +297,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   doubleteam: {
     name: 'Double Team',
@@ -292,6 +312,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   smoosh: {
     name: 'Smoosh',
@@ -306,6 +327,7 @@ let attacks = {
     enemyEvadeMod: -1,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   stomp: {
     name: 'Stomp',
@@ -320,6 +342,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   hide: {
     name: 'Hide',
@@ -334,6 +357,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   respect: {
     name: 'Respect',
@@ -348,6 +372,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: -2,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   zoomies: {
     name: 'Zoomies',
@@ -362,6 +387,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   evade: {
     name: 'Evade',
@@ -376,6 +402,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   missleattack: {
     name: 'Missle Attack',
@@ -390,6 +417,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   forcethrow: {
     name: 'Force Throw',
@@ -404,6 +432,7 @@ let attacks = {
     enemyEvadeMod: -1,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   forcechoke: {
     name: 'Force Choke',
@@ -418,6 +447,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: -1,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   mindchange: {
     name: 'Mind Change',
@@ -432,6 +462,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: -2,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   forcelightning: {
     name: 'Force Lightning',
@@ -446,6 +477,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   collect: {
     name: 'Collect',
@@ -460,6 +492,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   lookcute: {
     name: 'Look Cute',
@@ -474,6 +507,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: -2,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   photosynthesis: {
     name: 'Photosynthesis',
@@ -488,6 +522,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   fuzzball: {
     name: 'Fuzz Ball',
@@ -502,6 +537,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: -2,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   yip: {
     name: 'Yip',
@@ -516,6 +552,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   heartofthewarrior: {
     name: 'Heart of the Warrior',
@@ -530,6 +567,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   headbutt: {
     name: 'Headbutt',
@@ -544,6 +582,7 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
   underfoot: {
     name: 'Underfoot',
@@ -558,6 +597,22 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
+    sfx: 'assets/sfx/glare.mp3'
+  },
+  laze: {
+    name: 'Laze',
+    type: 'lazy',
+    movement: 'in-place',
+    damage: 0,
+    heal: 8,
+    attackMod: 0,
+    defenseMod: 1,
+    evadeMod: -2,
+    enemyDefenseMod: 0,
+    enemyEvadeMod: 0,
+    enemyAttackMod: 0,
+    description: '',
+    sfx: 'assets/sfx/glare.mp3'
   },
 };
 
@@ -1244,7 +1299,7 @@ let budStorage = {
     baseAtk: 15,
     def: 15,
     evade: 10,
-    moves: ['glare', 'nap', 'monch', 'knockover'],
+    moves: ['glare', 'laze', 'monch', 'knockover'],
     description: 'Either a musical instrument, or a couch potato.',
     pic: 'assets/banjo_optimized.png'
   },

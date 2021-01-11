@@ -128,7 +128,8 @@ $(document).ready(function() {
     } else if (attacks[move].movement === 'upward' && typeof(totalDamage) === 'number') {
       $('#' + attacker.key + ' .bud-pic').attr('class', 'bud-pic upward');
     }
-
+    var audio = new Audio('assets/sfx/' + move + '.mp3');
+    audio.play();
     $movedButton.on('click', movedButtonHandler)
   }
 
@@ -149,8 +150,10 @@ $(document).ready(function() {
       if (attacks[move].defenseMod !== 0) {
         result += ' and increased their defense by ' + attacks[move].defenseMod
       }
-      if (attacks[move].evadeMod !== 0) {
+      if (attacks[move].evadeMod > 0) {
         result += ' and increased their evade ability by ' + attacks[move].evadeMod
+      } else if (attacks[move].evadeMod < 0) {
+        result += ' but decreased their evade ability by ' + -attacks[move].evadeMod
       }
       if (attacks[move].enemyAttackMod !== 0) {
         result += ' and lowered their enemies attack power by ' + -attacks[move].enemyAttackMod;
@@ -227,6 +230,8 @@ $(document).ready(function() {
         damageDoer.evade += attacks[attack].evadeMod;
         if (damageDoer.evade > Math.floor(budStorage[damageDoer.key].evade * 2)) {
           damageDoer.evade = Math.floor(budStorage[damageDoer.key].evade * 2);
+        } else if (damageDoer.evade < Math.floor(budStorage[damageDoer.key].evade / 2)) {
+          damageDoer.evade = Math.floor(budStorage[damageDoer.key].evade / 2);
         }
       }
       if (attacks[attack].enemyAttackMod) {
