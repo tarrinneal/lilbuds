@@ -106,7 +106,7 @@ $(document).ready(function() {
     var $budWindow = makeBudCard(bud);
     $budWindow.appendTo($battleScreen);
     if (!defender) {
-
+      music.currentTime = 0;
       music.play();
       defender = {...budStorage[evilBud]};
     }
