@@ -5,7 +5,6 @@ $(document).ready(function() {
 
   var $app = $('#app');
   var music= new Audio('assets/sfx/music.mp3');
-  console.log(music)
   music.volume = 0.05;
 
 
@@ -21,14 +20,12 @@ $(document).ready(function() {
     $homeScreenHousing.appendTo($app);
     $battleStartButton.appendTo($homeScreenHousing);
     if (last) {
-      console.log(last)
       var endSfx;
       if (last === 'YOU WIN!') {
         endSfx = new Audio('assets/sfx/victory.mp3');
       } else {
         endSfx = new Audio('assets/sfx/loss.mp3');
       }
-      console.log(endSfx)
       endSfx.play();
       $lastDiv.appendTo($homeScreenHousing);
     }
