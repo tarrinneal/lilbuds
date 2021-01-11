@@ -21,6 +21,13 @@ $(document).ready(function() {
     $homeScreenHousing.appendTo($app);
     $battleStartButton.appendTo($homeScreenHousing);
     if (last) {
+      var endSfx;
+      if (last === 'YOU WIN!') {
+        endSfx = new Audio('assets/sfx/victory.mp3');
+      } else {
+        endSfx = new Audio('assets/sfx/loss.mp3');
+      }
+      endSfx.play();
       $lastDiv.appendTo($homeScreenHousing);
     }
     $battleStartButton.on('click', handleStartButtonClick);
