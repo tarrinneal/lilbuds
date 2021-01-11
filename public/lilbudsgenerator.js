@@ -1235,6 +1235,19 @@ let budStorage = {
     description: 'Tyler Holts Dog',
     pic: 'assets/tyler-holts-dog_optimized.png'
   },
+  banjo: {
+    key: 'banjo',
+    name: 'Banjo',
+    type: 'Couch Potato',
+    maxHp: 42,
+    currentHp: 42,
+    baseAtk: 15,
+    def: 15,
+    evade: 10,
+    moves: ['glare', 'nap', 'monch', 'knockover'],
+    description: 'Either a musical instrument, or a couch potato.',
+    pic: 'assets/banjo_optimized.png'
+  },
 };
 
 let buds = Object.keys(budStorage).sort();
