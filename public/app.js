@@ -96,6 +96,7 @@ $(document).ready(function() {
     $budWindow.appendTo($battleScreen);
     if (!defender) {
       var music= new Audio('assets/sfx/music.mp3');
+      music.volume = 0.2;
       music.play();
       defender = {...budStorage[evilBud]};
     }
