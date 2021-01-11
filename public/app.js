@@ -145,7 +145,9 @@ $(document).ready(function() {
       $('#' + attacker.key + ' .bud-pic').attr('class', 'bud-pic upward');
     }
     var audio = new Audio('assets/sfx/' + move + '.mp3');
-    audio.play();
+    if (typeof(totalDamage) === 'number' || attacks[move].damage === 0) {
+      audio.play();
+    }
     $movedButton.on('click', movedButtonHandler)
   }
 
@@ -198,7 +200,9 @@ $(document).ready(function() {
     $continueFightButton = $('<button class="moved-button button">Enemy ' + defender.name + ' used ' + attacks[randomMove].name + attackDid(randomMove, defender, attacker, totalDamage) + '</button>')
     $continueFightButton.appendTo($moveListBox);
     var audio = new Audio('assets/sfx/' + randomMove + '.mp3');
-    audio.play();
+    if (typeof(totalDamage) === 'number' || attacks[randomMove].damage === 0) {
+      audio.play();
+    }
     if (attacks[randomMove].movement === 'forward' && typeof(totalDamage) === 'number') {
       $('#evil-bud .bud-pic').attr('class', 'bud-pic on-attack-back');
     } else if (attacks[randomMove].movement === 'in-place' && typeof(totalDamage) === 'number') {
