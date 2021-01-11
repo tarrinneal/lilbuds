@@ -87,11 +87,14 @@ $(document).ready(function() {
 
   var startFight = function(bud, evilBud = randomBud()) {
     $app.html('');
+
     var $battleScreen = $('<section class="battle-screen"></section>');
     $battleScreen.html('');
     var $budWindow = makeBudCard(bud);
     $budWindow.appendTo($battleScreen);
     if (!defender) {
+      var music= new Audio('assets/sfx/music.mp3');
+      audio.play();
       defender = {...budStorage[evilBud]};
     }
     var $evilBudWindow = makeBudCard(defender);
