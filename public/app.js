@@ -10,6 +10,8 @@ $(document).ready(function() {
 
   var start = function (state = 'Let\'s Battle!', last) {
     $app.html('');
+    var sounds = document.getElementsByTagName('audio');
+    for(i=0; i<sounds.length; i++) sounds[i].pause();
     var $homeScreenHousing = $('<div class="home-screen-housing"></div>');
     var $battleStartButton = $('<button class="button battle-start-button">' + state + '</button>');
     var $lastDiv = $('<div class="last-game-state">' + last + '</div>');
@@ -94,7 +96,7 @@ $(document).ready(function() {
     $budWindow.appendTo($battleScreen);
     if (!defender) {
       var music= new Audio('assets/sfx/music.mp3');
-      audio.play();
+      music.play();
       defender = {...budStorage[evilBud]};
     }
     var $evilBudWindow = makeBudCard(defender);
