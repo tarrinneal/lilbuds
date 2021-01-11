@@ -6,7 +6,7 @@ $(document).ready(function() {
   var $app = $('#app');
   var music= new Audio('assets/sfx/music.mp3');
   console.log(music)
-  music.volume = 0.1;
+  music.volume = 0.05;
 
 
 
@@ -107,7 +107,7 @@ $(document).ready(function() {
     $budWindow.appendTo($battleScreen);
     if (!defender) {
 
-      // music.play();
+      music.play();
       defender = {...budStorage[evilBud]};
     }
     var $evilBudWindow = makeBudCard(defender);
