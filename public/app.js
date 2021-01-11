@@ -181,6 +181,8 @@ $(document).ready(function() {
     $moveListBox.html('');
     $continueFightButton = $('<button class="moved-button button">Enemy ' + defender.name + ' used ' + attacks[randomMove].name + attackDid(randomMove, defender, attacker, totalDamage) + '</button>')
     $continueFightButton.appendTo($moveListBox);
+    var audio = new Audio('assets/sfx/' + randomMove + '.mp3');
+    audio.play();
     if (attacks[randomMove].movement === 'forward' && typeof(totalDamage) === 'number') {
       $('#evil-bud .bud-pic').attr('class', 'bud-pic on-attack-back');
     } else if (attacks[randomMove].movement === 'in-place' && typeof(totalDamage) === 'number') {
