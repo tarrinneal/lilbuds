@@ -12,7 +12,6 @@ let attacks = {
     enemyEvadeMod: -1,
     enemyAttackMod: -2,
     description: '',
-    sfx: 'assets/sfx/glare.mp3'
   },
   monch: {
     name: 'Monch',
@@ -27,7 +26,6 @@ let attacks = {
     enemyEvadeMod: 0,
     enemyAttackMod: 0,
     description: '',
-    sfx: 'assets/sfx/monch.mp3'
   },
   tailsmack: {
     name: 'Tail Smack',
