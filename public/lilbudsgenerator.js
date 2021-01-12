@@ -573,6 +573,34 @@ let attacks = {
     enemyAttackMod: 0,
     description: '',
   },
+  alarmclock: {
+    name: 'Alarm Clock',
+    type: 'annoying',
+    movement: 'in-place',
+    damage: 0,
+    heal: 0,
+    attackMod: 1,
+    defenseMod: 0,
+    evadeMod: 0,
+    enemyDefenseMod: -2,
+    enemyEvadeMod: 0,
+    enemyAttackMod: 0,
+    description: '',
+  },
+  wetchicken: {
+    name: 'Wet Chicken',
+    type: 'smashing',
+    movement: 'upward',
+    damage: 6,
+    heal: 0,
+    attackMod: 0,
+    defenseMod: 0,
+    evadeMod: 0,
+    enemyDefenseMod: 0,
+    enemyEvadeMod: -1,
+    enemyAttackMod: 0,
+    description: '',
+  },
 };
 
 var dogMoves = ['nap', 'scratch', 'chomp', 'bark'];
@@ -1261,6 +1289,32 @@ let budStorage = {
     moves: ['glare', 'laze', 'monch', 'knockover'],
     description: 'Either a musical instrument, or a couch potato.',
     pic: 'assets/banjo_optimized.png'
+  },
+  artemis: {
+    key: 'artemis',
+    name: 'Artemis',
+    type: 'flying',
+    maxHp: 28,
+    currentHp: 28,
+    baseAtk: 18,
+    def: 14,
+    evade: 12,
+    moves: ['fly', 'wetchicken', 'peck', 'squack'],
+    description: '',
+    pic: 'assets/artemis.png'
+  },
+  freya: {
+    key: 'freya',
+    name: 'Freya',
+    type: 'flying',
+    maxHp: 28,
+    currentHp: 28,
+    baseAtk: 18,
+    def: 14,
+    evade: 12,
+    moves: ['fly', 'wingbash', 'peck', 'alarmclock'],
+    description: '',
+    pic: 'assets/freya.png'
   },
 };
 
