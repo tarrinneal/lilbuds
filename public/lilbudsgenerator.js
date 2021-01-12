@@ -1106,9 +1106,9 @@ let budStorage = {
     description: 'Daryll Mamarils Dog',
     pic: 'assets/daryll-mamarils-dog_optimized.png'
   },
-  enDog: {
-    key: 'enDog',
-    name: 'EN Dog',
+  izzi: {
+    key: 'izzi',
+    name: 'Izzi',
     type: 'Precious',
     maxHp: 40,
     currentHp: 40,
